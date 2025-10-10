@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Makerspace | Jake Finlayson - Creative Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="../assets/images/ico/favicon.png" />
+    <link rel="stylesheet" href="../assets/css/plugins.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- Socicon CSS -->
+    <link rel="stylesheet" href="assets/css/vendors/socicon-style.css">
+  </head>
+  <body>
+    <div class="ms-main-container">
+      <!-- Preloader -->
+      <div class="ms-preloader"></div>
+      <!-- Header -->
+      <header class="ms-header navbar-black">
+        <nav class="ms-nav">
+          <div class="ms-logo">
+            <a href="index.html" data-type="page-transition">
+              <div class="logo-dark current"><img src="logo-dark.svg" alt="logo image"></div>
+              <div class="logo-light"><img src="logo-light.svg" alt="logo image"></div>
+            </a>
+          </div>
+          <button class="hamburger" type="button" data-toggle="navigation">
+          <span class="hamburger-box">
+            <span class="hamburger-label">menu</span>
+            <span class="hamburger-inner"></span>
+          </span>
+          </button>
+          <div class="height-full-viewport">
+            <ul class="ms-navbar">
+              <!-- Nav Link -->
+              <li class="nav-item">
+                <a href="index.html" data-type="page-transition">
+                  <span class="ms-btn">home</span>
+                  <span class="nav-item__label">Back to home page</span>
+                </a>
+              </li>
+              <!-- Nav Link -->
+              <li class="nav-item">
+                <a href="about.html" data-type="page-transition">
+                  <span class="ms-btn">about</span>
+                  <span class="nav-item__label">Learn more about me</span>
+                </a>
+              </li>
+              <!-- Nav Link -->
+              <li class="nav-item">
+                <a href="projects.html" data-type="page-transition">
+                  <span class="ms-btn">portfolio</span>
+                  <span class="nav-item__label">View my work</span>
+                </a>
+              </li>
+              <!-- Nav Link -->
+              <li class="nav-item">
+                <a href="contact.html" data-type="page-transition">
+                  <span class="ms-btn">contact</span>
+                  <span class="nav-item__label">Get in touch with me</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <!-- Container -->
+      <main class="ms-container">
+        <!-- Page Title -->
+        <div class="ms-section__block">
+            <div class="ms-page-title">
+                <h2 class="page-header">Makerspace</h2>
+                <p class="page-desc">
+                    As an assignment for Yoobee I was tasked with creating marketing collateral for a local council project. In Auckland our libraries actively have a program running promoting the exploration of creative technology such as Game Dev, Music Production, Robotics and 3d Printers called 'Makerspace'.
+                </p>
+            </div>
+        </div>
+        <!-- Behind the Design Section -->
+        <div class="ms-section__block">
+            <div class="row" style="margin-bottom:1em;">
+                <div class="col-md-12">
+                    <h3 class="mb-4">Behind the Design</h3>
+                    <img src="../assets/images/projects/makerspace/makerspace-color.webp"
+                        alt="Game Design Screenshot"
+                        class="game-design-float-img" style="padding-left:2em;">
+                    <p class="game-design-pad" style="padding-right:2em;">
+                        The theme across all marketing collateral was reminiscent of 80s media and the surging popularity of arcade games. The technlogy theme of the Makerspace by going with a bright neon “cyber” colour palette. The color palette features green (renewal), turqoise/blue (positive emotions and increased empathy), purple (imagination), and pink (love and playfullness). These analogous colours thus create a feeling of creativity and fun in a digital environment. The use of neon colors also provides high visibility and nostalgia referencing early 80s media, when arcade machines became widely popular. 
+                    </p>
+                    <p class="game-design-pad" style="padding-right:2em;">
+                        With the poster and Instagram post, I also created an arcade style game called “Library Mania”. There were a few design considerations that needed to be made before starting this project. It needs to be easy to pick up, at specific aspect ratios and fun to get interest in Makerspace.
+                    </p>
+                </div>
+            </div>
+            <div class="justify-center align-center" style="text-align:center;">
+                <img src="../assets/images/projects/makerspace/makerspace-game-idea.png" alt="Makerspace GDD" style="width:65%;margin-bottom:1em;">
+            </div>
+        </div>
+        <div class="ms-section__block">
+          <div class="center-block align-center" style="text-align:center;">
+                      <h3 class="mb-4">Download the Full Documentation</h3>
+              <a href="../assets/images/projects/makerspace/Jake Finlayson - Makerspace Marketing Documentation.pdf" target="_blank" 
+              class="ms-button" data-title="download" >
+                  Download the Doc
+                  <button type="button" style="display:none;"></button>
+              </a>
+          </div>
+        </div>
+        <!-- Poster Ideation Section -->
+        <div class="ms-section__block">
+            <h3 class="mb-4">Poster Ideation</h3>
+            <div style="display:flex; align-items:center; justify-content:center; gap:1em;">
+                <!-- Left button -->
+                <button id="saniti-prev" class="ms-button" aria-label="Previous image"
+                    style="font-size:1em; padding:0.6em 0.8em;">
+                    &lt;    
+                </button>
+                <!-- Image -->
+                <img id="saniti-carousel-img"
+                    src="../assets/images/projects/makerspace/MakerspacePosterConcept1.webp"
+                    alt="Makerspace Poster Concepts"
+                    class="carousel-img"
+                    data-images='[
+                    "../assets/images/projects/makerspace/MakerspacePosterConcept1.webp",
+                    "../assets/images/projects/makerspace/MakerspacePosterConcept2.webp",
+                    "../assets/images/projects/makerspace/MakerspacePosterConcept3.webp"
+                    ]'
+                    style="display:block; margin-bottom:1em; width:60%; max-width:600px;">
+                <!-- Right button -->
+                <button id="saniti-next" class="ms-button" aria-label="Next image"
+                    style="font-size:1em; padding:0.6em 0.8em;">
+                    &gt;
+                </button>
+            </div>
+        </div>
+        <!-- Final Designs Section -->
+        <div class="ms-section__block">
+          <h3 class="mb-4">Final Designs</h3>
+          <div class="row">
+            <div class="col-md-4">
+              <img src="../assets/images/projects/makerspace/makerspace-cover.webp" alt="Makerspace Instagram Post" style="width:100%;margin-bottom:1em;">
+            </div>
+            <div class="col-md-4">
+              <img src="../assets/images/projects/makerspace/makerspace-final-poster.webp" alt="Makerspace Final Poster" style="width:100%;margin-bottom:1em;">
+            </div>
+            <div class="col-md-4">
+              <img src="../assets/images/projects/makerspace/makerspace-arcade.webp" alt="Makerspace Arcade" style="width:100%;margin-bottom:1em;">
+            </div>
+          </div>
+        </div>
+        <!-- Itch.io Section -->
+        <div class="ms-section__block">
+          <h3 class="mb-4">Play it on Itch.io</h3>
+          <div class="center-block align-center">
+            <div style="max-width: 800px; margin: 0 auto;">
+              <iframe frameborder="0" src="https://itch.io/embed/2781865?dark=true" width="552" height="167"><a href="https://3mourn.itch.io/library-mania">Library Mania by 3mourn</a></iframe>
+        </div>
+
+      </main>
+      <!-- Footer -->
+      <footer>
+        <div class="ms-footer">
+          <div class="copyright">Copyright © 2025. Jake Finlayson</div>
+          <ul class="socials">
+            <li><a href="https://github.com/fakejinlayson" class="socicon-github"></a></li>
+            <li><a href="https://www.linkedin.com/in/jake-finlayson" class="socicon-linkedin"></a></li>
+            <li><a href="https://www.upwork.com/freelancers/~01a132dd50adcf6641" class="socicon-upwork"></a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <!-- JS Libraries -->
+    <script type="text/javascript" src="../assets/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins.min.js"></script>
+    <script type="text/javascript" src="../assets/js/main.js"></script>
+    <script src="../assets/js/image-carousel.js"></script>
+  </body>
+</html>

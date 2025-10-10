@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RIDDEN | Jake Finlayson - Creative Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="../assets/images/ico/favicon.png" />
+    <link rel="stylesheet" href="../assets/css/plugins.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- Socicon CSS -->
+    <link rel="stylesheet" href="assets/css/vendors/socicon-style.css">
+  </head>
+  <body>
+    <div class="ms-main-container">
+      <!-- Preloader -->
+      <div class="ms-preloader"></div>
+      <!-- Header -->
+      <header class="ms-header navbar-black">
+        <nav class="ms-nav">
+          <div class="ms-logo">
+            <a href="index.html" data-type="page-transition">
+              <div class="logo-dark current"><img src="logo-dark.svg" alt="logo image"></div>
+              <div class="logo-light"><img src="logo-light.svg" alt="logo image"></div>
+            </a>
+          </div>
+          <button class="hamburger" type="button" data-toggle="navigation">
+          <span class="hamburger-box">
+            <span class="hamburger-label">menu</span>
+            <span class="hamburger-inner"></span>
+          </span>
+          </button>
+          <div class="height-full-viewport">
+            <ul class="ms-navbar">
+              <!-- Nav Link -->
+              <li class="nav-item">
+                <a href="index.html" data-type="page-transition">
+                  <span class="ms-btn">home</span>
+                  <span class="nav-item__label">Back to home page</span>
+                </a>
+              </li>
+              <!-- Nav Link -->
+              <li class="nav-item">
+                <a href="about.html" data-type="page-transition">
+                  <span class="ms-btn">about</span>
+                  <span class="nav-item__label">Learn more about me</span>
+                </a>
+              </li>
+              <!-- Nav Link -->
+              <li class="nav-item">
+                <a href="projects.html" data-type="page-transition">
+                  <span class="ms-btn">portfolio</span>
+                  <span class="nav-item__label">View my work</span>
+                </a>
+              </li>
+              <!-- Nav Link -->
+              <li class="nav-item">
+                <a href="contact.html" data-type="page-transition">
+                  <span class="ms-btn">contact</span>
+                  <span class="nav-item__label">Get in touch with me</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <!-- Container -->
+      <main class="ms-container">
+        <!-- Page Title -->
+        <div class="ms-section__block">
+          <div class="ms-page-title">
+            <h2 class="page-header">RIDDEN</h2>
+            <p class="page-desc">
+                RIDDEN is a 2D side-scrolling space shooter controlled entirely by the mouse. Play as an armed maintenance drone aboard a spaceship overrun by aliens. Collect organic matter to analyse, upgrade your on-board systems, and fight through alien bosses as you strive to complete your final directives.        
+          </div>
+        </div>
+        <!-- Game Design Section -->
+        <div class="ms-section__block">
+            <h3 class="mb-4">Game Design</h3>
+            <p>
+                The initial inspiration I had for Ridden was from Dead Space. In particular, I liked how they utilized digetic UI throughout the game, immersing the player further in to the world. However, I wanted to make the game even more minimal. As a result I took inspiration from a game called Downwell. Downwell is a minimalist platforming game with a simple colour pallette and simple controls. However, every input you can make has about 3 or more different actions. What interested me about both these games was stripping back a game to it's core inputs, aesthetics and mechanics, whilst still creating a breadth of interesting, immersive gameplay. To achieve this, the idea was Minamalism in every sense of the word. The entire game's controls are with the mouse. You accelerate with the right click, shoot with the left, which also pushes you back. The colour pallette is incredibly minamilst, only sticking to black and blue, with art style inspiration from Badland. All UI is digetic like Dead Space, with Lvl Up's taking form as a hologram in world. Lastly, the music adapts to the amount and type of enemies on screen at any given point, allowing the player to get a sense of warning, without needing UI warnings on screen.
+            </p>
+            <div style="display:flex; align-items:center; justify-content:center; gap:1em;">
+                <!-- Left button -->
+                <button id="saniti-prev" class="ms-button" aria-label="Previous image"
+                    style="font-size:1em; padding:0.6em 0.8em;">
+                    &lt;
+                </button>
+                <!-- Image -->
+                <img id="saniti-carousel-img"
+                    src="../assets/images/projects/ridden/ridden-4.webp"
+                    alt="Ridden Screenshot"
+                    class="carousel-img"
+                    data-images='[
+                    "../assets/images/projects/ridden/ridden-4.webp",
+                    "../assets/images/projects/ridden/ridden-3.webp",
+                    "../assets/images/projects/ridden/ridden-1.webp"
+                    ]'
+                    style="display:block; margin-bottom:1em;">
+                <!-- Right button -->
+                <button id="saniti-next" class="ms-button" aria-label="Next image"
+                    style="font-size:1em; padding:0.6em 0.8em;">
+                    &gt;
+                </button>
+            </div>
+        </div>
+        <!-- Programming Section -->
+        <div class="ms-section__block">
+            <h3 class="mb-4">Programming</h3>
+            <p>
+                The engine chosen for the game was Unity. My responsibilites included the movement system, random map generation, the levelling system and a custom technical audio solution which adapts depending on the type of enemies left in the room.
+            </p>
+            <div class="justify-center align-center" style="text-align:center;">
+            <img src="../assets/images/projects/ridden/ridden-2.webp" alt="Unity Screenshot" style="width:80%;margin-bottom:1em;">
+            </div>
+        </div>
+        <!-- Itch.io Section -->
+        <div class="ms-section__block">
+          <h3 class="mb-4">Play it on Itch.io</h3>
+          <div class="center-block align-center">
+            <div style="max-width: 800px; margin: 0 auto;">
+              <iframe frameborder="0" src="https://itch.io/embed/1792391?dark=true" width="552" height="167"><a href="https://rapidrstudio.itch.io/ridden">RIDDEN by RapidRStudio, Shinigami, B. Cleo Renshaw, Rjinswand, Shanon Richmond, 3mourn, OliTheVamp</a></iframe>
+            </div>
+        </div>
+      </main>
+      <!-- Footer -->
+      <footer>
+        <div class="ms-footer">
+          <div class="copyright">Copyright © 2025. Jake Finlayson</div>
+          <ul class="socials">
+            <li><a href="https://github.com/fakejinlayson" class="socicon-github"></a></li>
+            <li><a href="https://www.linkedin.com/in/jake-finlayson" class="socicon-linkedin"></a></li>
+            <li><a href="https://www.upwork.com/freelancers/~01a132dd50adcf6641" class="socicon-upwork"></a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <!-- JS Libraries -->
+    <script type="text/javascript" src="../assets/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins.min.js"></script>
+    <script type="text/javascript" src="../assets/js/main.js"></script>
+    <script src="../assets/js/image-carousel.js"></script>
+  </body>
+</html>
