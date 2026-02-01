@@ -3,3 +3,9 @@ assets/videos/videoShowcase.mp4 filter=lfs diff=lfs merge=lfs -text
 assets/vidoes/gameplayShowcase.mp4 filter=lfs diff=lfs merge=lfs -text
 assets/videos/marketingShowcase.mp4 filter=lfs diff=lfs merge=lfs -text
 assets/videos/musicShowcase.mp4 filter=lfs diff=lfs merge=lfs -text
+assets/images/projects/hhstj/hhstj-reel-1.mp4 filter=lfs diff=lfs merge=lfs -text
+assets/images/projects/hhstj/hhstj-reel-2.mp4 filter=lfs diff=lfs merge=lfs -text
+assets/images/projects/hhstj/hhstj-reel-3.mp4 filter=lfs diff=lfs merge=lfs -text
+assets/images/projects/twodudes/twodudes-reel-1.mp4 filter=lfs diff=lfs merge=lfs -text
+assets/images/projects/twodudes/twodudes-reel-2.mp4 filter=lfs diff=lfs merge=lfs -text
+assets/images/projects/twodudes/twodudes-reel-3.mp4 filter=lfs diff=lfs merge=lfs -text
