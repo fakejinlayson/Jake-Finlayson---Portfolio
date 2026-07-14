@@ -14,27 +14,27 @@
 // ============================================================
 const CATEGORIES = {
   'Game Dev': [
-    { w: 320, h: 220, label: 'Chutney', src: 'assets/images/projects/chutney/chutney-gameplay1.jpg' },
+    { w: 320, h: 220, label: 'Chutney', src: 'assets/images/projects/chutney/chutney-gameplay1.webp' },
     { w: 240, h: 300, label: 'RIDDEN', src: 'assets/images/projects/ridden/ridden-4.webp' },
-    { w: 360, h: 200, label: 'Game Grimoire', src: 'assets/images/projects/game grimoire/game-grimoire-screenshot1.png' },
-    { w: 260, h: 260, label: 'Makerspace', src: 'assets/images/projects/makerspace/makerspace-game.png' }
+    { w: 360, h: 200, label: 'Game Grimoire', src: 'assets/images/projects/game grimoire/game-grimoire-screenshot1.webp' },
+    { w: 260, h: 260, label: 'Makerspace', src: 'assets/images/projects/makerspace/makerspace-game.webp' }
   ],
   'Video': [
-    { w: 360, h: 200, label: 'two dudes', src: 'assets/images/projects/twodudes/twodudes-img-3.jpg' },
-    { w: 220, h: 300, label: 'Hato Hone St John', src: 'assets/images/projects/hhstj/hhstj-img-9.jpg' },
-    { w: 300, h: 220, label: 'NZ Scrabble', src: 'assets/images/projects/scrabble/scrabble-obs.jpg' },
-    { w: 240, h: 240, label: 'SANITI', src: 'assets/images/projects/saniti/saniti-event-1.jpg' }
+    { w: 360, h: 200, label: 'two dudes', src: 'assets/images/projects/twodudes/twodudes-img-3.webp' },
+    { w: 220, h: 300, label: 'Hato Hone St John', src: 'assets/images/projects/hhstj/hhstj-img-9.webp' },
+    { w: 300, h: 220, label: 'NZ Scrabble', src: 'assets/images/projects/scrabble/scrabble-obs.webp' },
+    { w: 240, h: 240, label: 'SANITI', src: 'assets/images/projects/saniti/saniti-event-1.webp' }
   ],
   'Marketing & Design': [
-    { w: 340, h: 200, label: 'Nelson Community Foodbank', src: 'assets/images/projects/foodbank nelson/logo-redesign.png' },
+    { w: 340, h: 200, label: 'Nelson Community Foodbank', src: 'assets/images/projects/foodbank nelson/logo-redesign.webp' },
     { w: 280, h: 280, label: 'Chur Bol BBQ', src: 'assets/images/projects/chur bol/chur-burger.webp' },
-    { w: 300, h: 220, label: 'Hato Hone St John', src: 'assets/images/projects/hhstj/hhstj-img-5.jpg' },
-    { w: 300, h: 220, label: 'Two Dudes', src: 'assets/images/projects/twodudes/twodudes-img-2.jpg' }
+    { w: 300, h: 220, label: 'Hato Hone St John', src: 'assets/images/projects/hhstj/hhstj-img-5.webp' },
+    { w: 300, h: 220, label: 'Two Dudes', src: 'assets/images/projects/twodudes/twodudes-img-2.webp' }
   ],
   'Music': [
-    { w: 260, h: 260, label: 'Chutney OST', src: 'assets/images/projects/chutney/chutney-ost.jpg' },
+    { w: 260, h: 260, label: 'Chutney OST', src: 'assets/images/projects/chutney/chutney-ost.webp' },
     { w: 320, h: 190, label: 'tides under all', src: 'assets/images/projects/tides under all/tides-under-all-cover.webp' },
-    { w: 320, h: 280, label: '3mourn', src: 'assets/images/projects/3mourn-img-ss.jpg' }
+    { w: 320, h: 280, label: '3mourn', src: 'assets/images/projects/3mourn-img-ss.webp' }
   ]
 };
 
@@ -125,7 +125,7 @@ function openCategory(categoryName) {
         <button class="win-close" aria-label="Close"></button>
       </div>
       <div class="win-body">
-        <img src="${item.src}" alt="${item.label}">
+        <img src="${item.src}" alt="${item.label}" loading="lazy">
       </div>
     `;
 

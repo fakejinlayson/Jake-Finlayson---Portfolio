@@ -9,84 +9,84 @@ const PROJECTS = [
     id: 'chutney',
     title: 'Chutney: Space Survivor',
     href: 'chutney.html',
-    image: 'assets/images/projects/img-chutney.jpg',
+    image: 'assets/images/projects/img-chutney.webp',
     categories: ['game-dev', 'music']
   },
   {
     id: 'twodudes',
     title: 'two dudes',
     href: 'twodudes.html',
-    image: 'assets/images/projects/img-twodudes.png',
+    image: 'assets/images/projects/img-twodudes.webp',
     categories: ['marketing', 'video']
   },
   {
     id: 'hato-hone-st-john',
     title: 'Hato Hone St John',
     href: 'hato-hone-st-john.html',
-    image: 'assets/images/projects/img-hato-hone-st-john.png',
+    image: 'assets/images/projects/img-hato-hone-st-john.webp',
     categories: ['marketing', 'video']
   },
   {
     id: 'scrabblenz',
     title: 'NZ Scrabble',
     href: 'scrabblenz.html',
-    image: 'assets/images/projects/img-scrabble.jpg',
+    image: 'assets/images/projects/img-scrabble.webp',
     categories: ['video']
   },
   {
     id: 'ridden',
     title: 'RIDDEN',
     href: 'ridden.html',
-    image: 'assets/images/projects/img-ridden.jpg',
+    image: 'assets/images/projects/img-ridden.webp',
     categories: ['game-dev', 'music']
   },
   {
     id: 'game-grimoire',
     title: 'Game Grimoire YT',
     href: 'game-grimoire.html',
-    image: 'assets/images/projects/img-gamegrimoire.jpg',
+    image: 'assets/images/projects/img-gamegrimoire.webp',
     categories: ['game-dev', 'video']
   },
   {
     id: 'tides-under-all',
     title: 'tides under all',
     href: 'tides-under-all.html',
-    image: 'assets/images/projects/img-tidesunderall.jpg',
+    image: 'assets/images/projects/img-tidesunderall.webp',
     categories: ['music']
   },
   {
     id: 'saniti',
     title: 'SANITI',
     href: 'saniti.html',
-    image: 'assets/images/projects/img-saniti.jpg',
+    image: 'assets/images/projects/img-saniti.webp',
     categories: ['marketing', 'video']
   },
   {
     id: 'foodbank-nelson',
     title: 'Nelson Community Foodbank',
     href: 'foodbank-nelson.html',
-    image: 'assets/images/projects/img-foodbank.jpg',
+    image: 'assets/images/projects/img-foodbank.webp',
     categories: ['marketing']
   },
   {
     id: 'cd-rom',
     title: 'cdROM.480p.hd_freeDownload',
     href: 'cd-rom.html',
-    image: 'assets/images/projects/img-cdrom.jpg',
+    image: 'assets/images/projects/img-cdrom.webp',
     categories: ['game-dev']
   },
   {
     id: 'chur-bol',
     title: 'Chur Bol BBQ',
     href: 'chur-bol.html',
-    image: 'assets/images/projects/img-churbol.jpg',
+    image: 'assets/images/projects/img-churbol.webp',
     categories: ['marketing']
   },
   {
     id: 'makerspace',
     title: 'Makerspace',
     href: 'makerspace.html',
-    image: 'assets/images/projects/img-makerspace.jpg',
+    image: 'assets/images/projects/img-makerspace.webp',
     categories: ['game-dev', 'marketing']
   }
 ];
