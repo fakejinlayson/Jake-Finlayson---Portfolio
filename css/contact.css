@@ -1,0 +1,126 @@
+/* ============================================================
+   CONTACT — page-specific styles. Loads after base.css.
+   ============================================================ */
+
+/* ---------- HERO ---------- */
+.contact-hero {
+  min-height: 65vh;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 48px 80px;
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.contact-hero__inner { width: 100%; }
+
+.contact-hero__eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--fg-muted);
+  margin-bottom: 20px;
+}
+
+.contact-hero__title {
+  font-size: clamp(52px, 9vw, 112px);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 0.9;
+}
+
+/* ---------- CONTACT GRID ---------- */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contact-col {
+  padding: 72px 48px;
+}
+
+.contact-col--right {
+  border-left: 1px solid var(--border-soft);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* ---------- CONTACT ITEMS ---------- */
+.contact-item {
+  margin-bottom: 44px;
+}
+
+.contact-item:last-child { margin-bottom: 0; }
+
+.contact-item__label {
+  font-size: 10px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--fg-faint);
+  margin-bottom: 8px;
+}
+
+.contact-item__value {
+  font-size: clamp(16px, 1.8vw, 20px);
+  color: var(--fg);
+  text-decoration: none;
+  display: inline-block;
+  transition: opacity 0.2s;
+}
+
+.contact-item__value:hover { opacity: 0.65; }
+
+/* ---------- SOCIALS ---------- */
+.contact-socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.contact-social {
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--fg);
+  text-decoration: none;
+  padding: 8px 18px;
+  border: 1px solid var(--border-soft);
+  border-radius: 999px;
+  transition: border-color 0.2s, opacity 0.2s;
+  opacity: 0.6;
+}
+
+.contact-social:hover {
+  opacity: 1;
+  border-color: var(--border-mid);
+}
+
+/* ---------- CTA (right column) ---------- */
+.contact-cta__heading {
+  font-size: clamp(20px, 2.8vw, 32px);
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  margin-bottom: 32px;
+}
+
+/* ---------- MOBILE ---------- */
+@media (max-width: 768px) {
+  .contact-hero {
+    padding: 120px 24px 60px;
+    min-height: 52vh;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-col {
+    padding: 48px 24px;
+  }
+
+  .contact-col--right {
+    border-left: none;
+    border-top: 1px solid var(--border-soft);
+  }
+}

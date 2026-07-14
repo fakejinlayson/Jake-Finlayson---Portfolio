@@ -1,132 +1,89 @@
-<!DOCTYPE html>
-<html>
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Jake Finlayson</title>
+<meta name="description" content="Get in touch with Jake Finlayson — creative generalist based in New Zealand.">
 
-  <head>
-    <title>Contact | Jake Finlayson - Creative Portfolio</title>
-    <!-- Metadata -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/images/ico/favicon.png" />
-    <!-- CSS Plugins -->
-    <link rel="stylesheet" href="assets/css/plugins.min.css">
-    <!-- Custom CSS File -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <!-- Socicon CSS -->
-    <link rel="stylesheet" href="assets/css/vendors/socicon-style.css">
-  </head>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
 
-  <body>
-    <div class="ms-main-container">
-      <!-- Preloader -->
-      <div class="ms-preloader"></div>
-      <!-- Header -->
-      <header class="ms-header navbar-black">
-        <nav class="ms-nav">
-          <div class="ms-logo">
-            <a href="index.html" data-type="page-transition">
-              <div class="logo-dark current"><img src="logo-dark.svg" alt="logo image"></div>
-              <div class="logo-light"><img src="logo-light.svg" alt="logo image"></div>
-            </a>
-          </div>
-          <button class="hamburger" type="button" data-toggle="navigation">
-          <span class="hamburger-box">
-            <span class="hamburger-label">menu</span>
-            <span class="hamburger-inner"></span>
-          </span>
-          </button>
-          <div class="height-full-viewport">
-            <ul class="ms-navbar">
-              <!-- Nav Link -->
-              <li class="nav-item">
-                <a href="index.html" data-type="page-transition">
-                  <span class="ms-btn">home</span>
-                  <span class="nav-item__label">Back to home page</span>
-                </a>
-              </li>
-              <!-- Nav Link -->
-              <li class="nav-item">
-                <a href="about.html" data-type="page-transition">
-                  <span class="ms-btn">about</span>
-                  <span class="nav-item__label">Learn more about me</span>
-                </a>
-              </li>
-              <!-- Nav Link -->
-              <li class="nav-item">
-                <a href="projects.html" data-type="page-transition">
-                  <span class="ms-btn">portfolio</span>
-                  <span class="nav-item__label">View my work</span>
-                </a>
-              </li>
-              <!-- Nav Link -->
-              <li class="nav-item">
-                <a href="contact.html" data-type="page-transition">
-                  <span class="ms-btn">contact</span>
-                  <span class="nav-item__label">Get in touch with me</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </header>
-      <!-- Container -->
-      <main class="ms-container">
-        <!-- Page Title -->
-        <div class="ms-section__block">
-          <div class="ms-page-title">
-            <h2 class="page-header">Let's have a chat</h2>
-            <p class="page-desc">Feel free to reach out for anything. Always happy to chat!</p>
-          </div>
-        </div>
-        <!-- Page Content -->
-        <div class="ms-section__block">
-          <div id="contact" class="row">
-          <div class="col-md-6">
-            <div class="row">
-                <div class="col-md-6">
-                  <h6>telephone</h6>
-                  <p>+64 022 014 5603</p>
-                </div>
-                <div class="col-md-6">
-                  <h6>email</h6>
-                  <p>info@jakefinlayson.co.nz</p>
-                </div>
-                <div class="col-md-6 cont-soc">
-                  <h6>social</h6>
-                  <p>
-                    <a href="https://github.com/fakejinlayson" class="socicon-github"></a>
-                    <a href="https://www.linkedin.com/in/jake-finlayson" class="socicon-linkedin"></a>
-                    <a href="https://www.upwork.com/freelancers/~01a132dd50adcf6641" class="socicon-upwork"></a>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 align-center">
-              <h6>Get in touch</h6>
-              <a href="mailto:info@jakefinlayson.co.nz" class="ms-button" data-title="Send Email">Send me an email</a>
-            </div>
-            </div>
-        </div>
-      </main>
-      <!-- Footer -->
-      <footer>
-        <div class="ms-footer">
-          <div class="copyright">Copyright © 2025. Jake Finlayson</div>
-          <ul class="socials">
-            <li><a href="https://github.com/fakejinlayson" class="socicon-github"></a></li>
-            <li><a href="https://www.linkedin.com/in/jake-finlayson" class="socicon-linkedin"></a></li>
-            <li><a href="https://www.upwork.com/freelancers/~01a132dd50adcf6641" class="socicon-upwork"></a></li>
-          </ul>
-        </div>
-      </footer>
+<div id="preloader">
+  <div class="pct" id="pct">0%</div>
+  <div class="bar-track"><div class="bar-fill" id="barFill"></div></div>
+</div>
+
+<nav>
+  <a class="logo" href="index.html">JF</a>
+  <div class="links">
+    <a href="about.html">About</a>
+    <a href="projects.html">Work</a>
+    <a href="contact.html" class="current">Contact</a>
+  </div>
+</nav>
+
+<main>
+
+  <!-- ── HERO ── -->
+  <section class="contact-hero">
+    <div class="contact-hero__inner">
+      <div class="contact-hero__eyebrow">Let's connect</div>
+      <h1 class="contact-hero__title">Let's have<br>a chat.</h1>
     </div>
-    <!-- JS Libraries -->
-    <!-- jquery-2.1.3.min js -->
-    <script type="text/javascript" src='assets/js/jquery-3.2.1.min.js'></script>
-    <!-- Vendors -->
-    <script type="text/javascript" src='assets/js/plugins.min.js'></script>
-    <!-- Main js -->
-    <script type="text/javascript" src="assets/js/main.js"></script>
-  </body>
+  </section>
 
+  <!-- ── CONTACT GRID ── -->
+  <div class="contact-grid">
+
+    <!-- Left column: contact details -->
+    <div class="contact-col">
+
+      <div class="contact-item">
+        <div class="contact-item__label">Phone</div>
+        <a class="contact-item__value" href="tel:+640220145603">+64 022 014 5603</a>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-item__label">Email</div>
+        <a class="contact-item__value" href="mailto:info@jakefinlayson.co.nz">info@jakefinlayson.co.nz</a>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-item__label">Socials</div>
+        <div class="contact-socials">
+          <a class="contact-social" href="https://github.com/fakejinlayson" target="_blank" rel="noopener">GitHub</a>
+          <a class="contact-social" href="https://www.linkedin.com/in/jake-finlayson" target="_blank" rel="noopener">LinkedIn</a>
+          <!-- <a class="contact-social" href="https://www.upwork.com/freelancers/~01a132dd50adcf6641" target="_blank" rel="noopener">Upwork</a> -->
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Right column: CTA -->
+    <div class="contact-col contact-col--right">
+      <div class="contact-cta">
+        <p class="contact-cta__heading">Have a project in mind? I'd love to hear about it! Drop me a line and let's make something together.</p>
+        <a class="btn" href="mailto:info@jakefinlayson.co.nz">Send me an email <span class="arrow">→</span></a>
+      </div>
+    </div>
+
+  </div>
+
+</main>
+
+<footer class="site-footer" id="footer">
+  <div class="big">Let's make something.</div>
+  <a class="contact-link" href="mailto:info@jakefinlayson.co.nz">info@jakefinlayson.co.nz</a>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/site-helpers.js"></script>
+<script src="js/contact.js"></script>
+<script src="js/preloader.js"></script>
+
+</body>
 </html>

@@ -1,0 +1,441 @@
+/* ============================================================
+   PROJECT-PAGE — shared styles for all individual project pages.
+   Loads after base.css.
+   ============================================================ */
+
+/* ---------- HERO ---------- */
+.proj-hero {
+  position: relative;
+  padding: 148px 48px 80px;
+  border-bottom: 1px solid var(--border-soft);
+  width: 100%;
+}
+
+/* floating hero icons — disabled, keeping rules in case they come back
+.proj-icon {
+  position: absolute;
+  width: 52px;
+  height: 52px;
+  cursor: grab;
+  user-select: none;
+  -webkit-user-drag: none;
+  z-index: 2;
+}
+
+.proj-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none;
+  -webkit-user-drag: none;
+  filter: drop-shadow(0 4px 14px rgba(0, 0, 0, 0.5));
+}
+
+.proj-icon:active { cursor: grabbing; }
+*/
+
+.proj-hero__back {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--fg-muted);
+  text-decoration: none;
+  margin-bottom: 44px;
+  transition: color 0.2s;
+}
+
+.proj-hero__back:hover { color: var(--fg); }
+
+.proj-hero__back-arrow {
+  display: inline-block;
+  transition: transform 0.2s;
+}
+
+.proj-hero__back:hover .proj-hero__back-arrow {
+  transform: translateX(-4px);
+}
+
+.proj-hero__tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.proj-hero__tag {
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--fg-muted);
+  border: 1px solid var(--border-mid);
+  padding: 5px 14px;
+  border-radius: 999px;
+}
+
+.proj-hero__title-wrap {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  max-width: min(900px, 90vw);
+  margin-bottom: 28px;
+}
+
+.proj-hero__title {
+  font-size: clamp(48px, 8vw, 108px);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 0.9;
+}
+
+.proj-hero__desc {
+  font-size: clamp(15px, 1.55vw, 18px);
+  line-height: 1.75;
+  color: var(--fg-muted);
+  max-width: 600px;
+}
+
+/* ---------- CONTENT SECTIONS ---------- */
+.proj-section {
+  padding: 72px 48px;
+  border-top: 1px solid var(--border-soft);
+  width: 100%;
+}
+
+.proj-section__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.proj-section__heading {
+  font-size: 11px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--fg-muted);
+  margin-bottom: 28px;
+}
+
+.proj-section__body {
+  font-size: clamp(14px, 1.4vw, 16px);
+  line-height: 1.85;
+  color: var(--fg-muted);
+  max-width: 700px;
+}
+
+.proj-section__body p { margin-bottom: 18px; }
+.proj-section__body p:last-child { margin-bottom: 0; }
+
+/* ---------- TWO-COLUMN LAYOUTS ---------- */
+.proj-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: start;
+}
+
+.proj-cols--3-2 { grid-template-columns: 3fr 2fr; }
+.proj-cols--2-3 { grid-template-columns: 2fr 3fr; }
+
+/* ---------- MEDIA EMBEDS ---------- */
+.proj-embed {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #111;
+}
+
+.proj-embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.proj-embed-wrap {
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+/* ---------- HERO IMAGE ---------- */
+/* matches .proj-embed-wrap's 820px width and 16:9 box so a plain
+   hero photo reads the same size as the trailer embed on other pages */
+.proj-hero-img {
+  padding: 72px 48px;
+  width: 100%;
+}
+
+.proj-hero-img img {
+  display: block;
+  width: 100%;
+  max-width: 820px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+
+.proj-spotify {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.proj-spotify iframe {
+  width: 100%;
+  height: 352px;
+  border-radius: 12px;
+  border: none;
+}
+
+.proj-itch {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.proj-itch iframe {
+  width: 100%;
+  height: 167px;
+  border: none;
+  border-radius: 8px;
+}
+
+.proj-steam {
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.proj-steam iframe {
+  width: 100%;
+  height: 190px;
+  border: none;
+  border-radius: 8px;
+}
+
+/* ---------- IMAGES ---------- */
+.proj-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.proj-img--center {
+  max-width: 640px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* ---------- GALLERY ---------- */
+.proj-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.proj-gallery img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  border-radius: 6px;
+  display: block;
+}
+
+.proj-gallery img,
+.proj-hero-img img,
+.proj-img {
+  cursor: zoom-in;
+}
+
+/* ---------- VERTICAL VIDEO GRID ---------- */
+.proj-videos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.proj-video-item {
+  border-radius: 10px;
+  overflow: hidden;
+  background: #111;
+  aspect-ratio: 9/16;
+}
+
+/* same box (radius, overflow, controls, reveal animation) as
+   .proj-video-item, just laid out for a horizontal source instead
+   of a vertical reel — spans 2 of the 3 columns so it sits directly
+   next to the preceding reel, filling out a 2-row/6-cell grid rather
+   than dropping to its own full-width row */
+.proj-video-item--wide {
+  grid-column: span 2;
+  aspect-ratio: auto;
+}
+
+.proj-video-item video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* object-fit: cover crops the source to fill the grid box, but that
+   same crop would otherwise carry into native fullscreen — show the
+   untouched frame there instead. Kept as separate rules rather than
+   one comma-separated list: an unsupported pseudo-class (e.g.
+   Firefox-only :-moz-full-screen in Chrome) invalidates the whole
+   selector list, not just that one selector, silently dropping the
+   rule everywhere. */
+.proj-video-item video:fullscreen { object-fit: contain; }
+.proj-video-item video:-webkit-full-screen { object-fit: contain; }
+.proj-video-item video:-moz-full-screen { object-fit: contain; }
+
+/* ---------- CAROUSEL ---------- */
+.proj-carousel {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 8px 0;
+}
+
+.proj-carousel--spaced { margin-top: 24px; }
+
+.proj-carousel__img {
+  flex: 1;
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+  min-width: 0;
+}
+
+.proj-carousel__btn {
+  background: rgba(244,244,240,0.06);
+  border: 1px solid var(--border-soft);
+  color: var(--fg);
+  font-size: 16px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.proj-carousel__btn:hover {
+  background: rgba(244,244,240,0.14);
+  border-color: var(--border-mid);
+}
+
+/* ---------- CTA LINKS ---------- */
+.proj-cta {
+  margin-top: 28px;
+}
+
+/* ---------- MOBILE ---------- */
+@media (max-width: 768px) {
+  .proj-hero {
+    padding: 120px 24px 60px;
+  }
+
+  .proj-section {
+    padding: 48px 24px;
+  }
+
+  .proj-hero-img {
+    padding: 48px 24px;
+  }
+
+  .proj-cols,
+  .proj-cols--3-2,
+  .proj-cols--2-3 {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .proj-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .proj-videos {
+    grid-template-columns: 1fr;
+  }
+
+  .proj-video-item--wide {
+    grid-column: 1 / -1;
+    aspect-ratio: 16/9;
+  }
+
+  .proj-carousel {
+    flex-direction: column;
+  }
+
+  .lightbox {
+    padding: 20px;
+  }
+
+  .lightbox__close {
+    top: 14px;
+    right: 14px;
+  }
+}
+
+/* ---------- LIGHTBOX ---------- */
+/* built by initLightbox() in project-page.js — a single reusable
+   overlay appended to <body>, shared by every .proj-gallery and
+   .proj-hero-img image on the page */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  z-index: 500;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease;
+}
+
+.lightbox.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.lightbox__img {
+  max-width: 90vw;
+  max-height: 85vh;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+}
+
+.lightbox__close {
+  position: fixed;
+  top: 28px;
+  right: 32px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  background: rgba(244, 244, 240, 0.1);
+  color: var(--fg);
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.lightbox__close:hover {
+  background: rgba(244, 244, 240, 0.2);
+}

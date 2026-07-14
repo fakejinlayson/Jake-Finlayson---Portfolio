@@ -1,172 +1,123 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Jake Finlayson - Creative Portfolio</title>
-    <!-- Metadata -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/images/ico/favicon.png" />
-    <!-- CSS Plugins -->
-    <link rel="stylesheet" href="assets/css/plugins.min.css">
-    <!-- Custom CSS File -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <!-- Socicon CSS -->
-    <link rel="stylesheet" href="assets/css/vendors/socicon-style.css">
-  </head>
-  <body>
-    <div class="ms-main-container">
-      <!-- Preloader -->
-      <div class="ms-preloader"></div>
-      <!-- Header -->
-      <header class="ms-header navbar-white">
-        <nav class="ms-nav">
-          <div class="ms-logo">
-            <a href="index.html" data-type="page-transition">
-              <div class="logo-dark current"><img src="logo-dark.svg" alt="logo image"></div>
-              <div class="logo-light"><img src="logo-light.svg" alt="logo image"></div>
-            </a>
-          </div>
-          <button class="hamburger" type="button" data-toggle="navigation">
-          <span class="hamburger-box">
-            <span class="hamburger-label">menu</span>
-            <span class="hamburger-inner"></span>
-          </span>
-          </button>
-          <div class="height-full-viewport">
-            <ul class="ms-navbar">
-              <!-- Nav Link -->
-              <li class="nav-item">
-                <a href="index.html" data-type="page-transition">
-                  <span class="ms-btn">home</span>
-                  <span class="nav-item__label">Back to home page</span>
-                </a>
-              </li>
-              <!-- Nav Link -->
-              <li class="nav-item">
-                <a href="about.html" data-type="page-transition">
-                  <span class="ms-btn">about</span>
-                  <span class="nav-item__label">Learn more about me</span>
-                </a>
-              </li>
-              <!-- Nav Link -->
-              <li class="nav-item">
-                <a href="projects.html" data-type="page-transition">
-                  <span class="ms-btn">portfolio</span>
-                  <span class="nav-item__label">View my work</span>
-                </a>
-              </li>
-              <!-- Nav Link -->
-              <li class="nav-item">
-                <a href="contact.html" data-type="page-transition">
-                  <span class="ms-btn">contact</span>
-                  <span class="nav-item__label">Get in touch with me</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </header>
-      <!-- Container -->
-      <main class="ms-container home-slider">
-        <!-- Swiper Slider -->
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <!-- Slide -->
-            <div class="swiper-slide">
-              <div class="slide-inner" data-swiper-parallax="45%">
-                <div class="overlay"></div>
-                <video class="slide-inner--video" autoplay loop muted playsinline preload="metadata" poster="assets/images/home-slider/StartPoster.png" style="width:100%;height:100%;object-fit:cover;">
-                  <source src="assets/videos/startVideo.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <div class="slide-inner--info">
-                  <h1>Creative<br>Generalist</h1>
-                  <a href="projects.html" data-type="page-transition" class="ms-btn--slider">take a look</a>
-                </div>
-              </div>
-            </div>
-            <!-- Slide -->
-            <div class="swiper-slide">
-              <div class="slide-inner" data-swiper-parallax="45%">
-                <div class="overlay"></div>
-                <video class="slide-inner--video" autoplay loop muted playsinline preload="metadata" poster="assets/images/home-slider/img-marketing.jpg" style="width:100%;height:100%;object-fit:cover;">
-                  <source src="assets/videos/marketingShowcase.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <div class="slide-inner--info">
-                  <h1>marketing &<br>design</h1>
-                  <a href="projects.html" data-type="page-transition" class="ms-btn--slider">take a look</a>
-                </div>
-              </div>
-            </div>
-            <!-- Slide -->
-            <div class="swiper-slide">
-              <div class="slide-inner" data-swiper-parallax="45%">
-                <div class="overlay"></div>
-                <video class="slide-inner--video" autoplay loop muted playsinline preload="metadata" poster="assets/images/home-slider/img-video.jpg" style="width:100%;height:100%;object-fit:cover;">
-                  <source src="assets/videos/videoShowcase.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <div class="slide-inner--info">
-                  <h1>video<br>editing</h1>
-                  <a href="projects.html" data-type="page-transition" class="ms-btn--slider">take a look</a>
-                </div>
-              </div>
-            </div>
-            <!-- Slide -->
-            <div class="swiper-slide">
-              <div class="slide-inner" data-swiper-parallax="45%">
-                <div class="overlay"></div>
-                <video class="slide-inner--video" autoplay loop muted playsinline preload="metadata" poster="assets/images/home-slider/img-game.jpg" style="width:100%;height:100%;object-fit:cover;">
-                  <source src="assets/videos/gameplayShowcase.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <div class="slide-inner--info">
-                  <h1>game<br>development</h1>
-                  <a href="projects.html" data-type="page-transition" class="ms-btn--slider">take a look</a>
-                </div>
-              </div>
-            </div>
-            <!-- Slide -->
-            <div class="swiper-slide">
-              <div class="slide-inner" data-swiper-parallax="45%">
-                <div class="overlay"></div>
-                <video class="slide-inner--video" autoplay loop muted playsinline preload="metadata" poster="assets/images/home-slider/img-music.jpg" style="width:100%;height:100%;object-fit:cover;">
-                  <source src="assets/videos/musicShowcase.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <div class="slide-inner--info">
-                  <h1>music<br>production</h1>
-                  <a href="projects.html" data-type="page-transition" class="ms-btn--slider">take a look</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-nav-btn">
-            <div class="swiper-button-prev swiper-button-white">prev</div>
-            <div class="swiper-button-next swiper-button-white">next</div>
-          </div>
-          <!-- Pagination -->
-          <div class="expanded-timeline">
-            
-            <div class="scroll-message">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.5 15.98" class="scroll-svg"><title>Asset 1</title><g>
-              <g data-name="Layer 1"><polygon fill="#fff" points="0 4.64 0.71 5.34 3.85 2.2 3.85 15.98 4.85 15.98 4.85 2.2 8 5.34 8.71 4.64 4.35 0.29 0 4.64"></polygon><polygon fill="#fff" points="11.65 0 11.65 13.79 8.5 10.64 7.79 11.35 12.15 15.7 16.5 11.35 15.79 10.64 12.65 13.79 12.65 0 11.65 0"></polygon></g></g></svg>Scroll
-            </div>
-            <div class="expanded-timeline__counter"><span></span><span></span></div>
-            <div class="swiper-pagination"></div>
-          </div>
-        </div>
-      </main>
-      <!-- /Container -->
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jake Finlayson — Creative Generalist</title>
+<meta name="description" content="Creative generalist working across game development, video, marketing, and music production.">
+
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+
+<div id="preloader">
+  <div class="pct" id="pct">0%</div>
+  <div class="bar-track"><div class="bar-fill" id="barFill"></div></div>
+</div>
+
+<nav>
+  <a class="logo" href="index.html">JF</a>
+  <div class="links">
+    <a href="about.html">About</a>
+    <a href="projects.html">Work</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<div class="scroll-hint" id="scrollHint">
+  <span>Scroll</span>
+  <div class="line"></div>
+</div>
+
+<section id="showreel">
+  <div class="reel-bg"></div>
+  <video class="reel-video"
+    id="reelVideo"
+    autoplay
+    muted
+    loop
+    playsinline
+    disablepictureinpicture0
+    title="Jake Finlayson — Showreel">
+    <source src="assets/videos/Showreel2026.mp4" type="video/mp4">
+  </video>
+  <div class="reel-content">
+    <!-- SWAP: update name and tagline below if needed -->
+    <div class="reel-title">Jake<br>Finlayson</div>
+    <div class="reel-sub">Creative generalist — design, video, game dev, music</div>
+  </div>
+  <button class="mute-toggle is-muted" id="muteToggle" aria-label="Unmute video" aria-pressed="false">
+    <svg class="icon-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polygon points="4 9 4 15 8 15 13 19 13 5 8 9 4 9"></polygon><line x1="16" y1="9" x2="22" y2="15"></line><line x1="22" y1="9" x2="16" y2="15"></line></svg>
+    <svg class="icon-unmuted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polygon points="4 9 4 15 8 15 13 19 13 5 8 9 4 9"></polygon><path d="M16 8a5 5 0 0 1 0 8"></path><path d="M18.5 5.5a9 9 0 0 1 0 13"></path></svg>
+  </button>
+</section>
+
+<section id="about">
+  <div class="about-inner">
+    <div class="about-photo-wrap">
+      <!-- SWAP: replace this div with <img src="assets/images/portrait.jpg" alt="Jake Finlayson" class="about-photo"> -->
+      <img src="assets/images/portrait.jpg" alt="Jake Finlayson" class="about-photo">
+      <!-- Skill icons — adjust top/right/bottom/left values to reposition around the photo -->
+      <div class="skill-icon" id="icon-gamedev" style="top: 10px; left: -18px;"><img src="assets/images/icons/icon-gamedev.png" alt="Game Development"></div>
+      <div class="skill-icon" id="icon-video" style="top: 50px; right: -24px;"><img src="assets/images/icons/icon-video.png" alt="Video Editing"></div>
+      <div class="skill-icon" id="icon-music" style="bottom: 60px; left: -28px;"><img src="assets/images/icons/icon-music.png" alt="Music Production"></div>
+      <div class="skill-icon" id="icon-marketing" style="bottom: -20px; right: 20px;"><img src="assets/images/icons/icon-marketing.png" alt="Marketing"></div>
     </div>
-    <!-- JS Libraries -->
-    <!-- jquery-2.1.3.min js -->
-    <script type="text/javascript" src='assets/js/jquery-3.2.1.min.js'></script>
-    <!-- Vendors -->
-    <script type="text/javascript" src='assets/js/plugins.min.js'></script>
-    <!-- Main js -->
-    <script type="text/javascript" src="assets/js/main.js"></script>
-  </body>
+    <div>
+      <div class="about-eyebrow">About</div>
+      <!-- SWAP: update the about text below. Each line must stay as its own
+           .about-line > span — the scroll animation reveals them one at a time. -->
+      <div id="about-lines">
+        <div class="about-line"><span>Hi! I'm a creative generalist working</span></div>
+        <div class="about-line"><span>across game dev, video editing, marketing,</span></div>
+        <div class="about-line"><span>music production and design.</span></div>
+        <div class="about-line"><span>I have a software engineering and marketing</span></div>
+        <div class="about-line"><span>background with a passion for creating</span></div>
+        <div class="about-line"><span>all things digital. Now I work as a</span></div>
+        <div class="about-line"><span>Freelance Creative, building things</span></div>
+        <div class="about-line"><span>that probably shouldn't all fit on one resume.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="explore">
+  <div id="explore-intro">
+    <div id="explore-intro-fade">
+      <div class="explore-heading">Select a category to explore</div>
+      <div id="category-menu"></div>
+
+      <div id="window-canvas">
+        <div class="canvas-empty-state" id="emptyState">Pick a category above</div>
+      </div>
+
+      <a class="btn" href="projects.html">
+        View full portfolio
+        <span class="arrow">→</span>
+      </a>
+    </div>
+  </div>
+
+  <div id="explore-exit"></div>
+</section>
+
+<footer class="site-footer" id="contact">
+  <div class="big">Let's make something.</div>
+  <a class="contact-link" href="mailto:info@jakefinlayson.co.nz">info@jakefinlayson.co.nz</a>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Draggable.min.js"></script>
+<script src="js/site-helpers.js"></script>
+<script src="js/home.js"></script>
+<script src="js/preloader.js"></script>
+<!--
+  preloader.js loads last because it calls window.initPage() as soon
+  as it finishes — that function must already be defined by the time
+  preloader.js runs, which home.js is responsible for.
+-->
+
+</body>
 </html>

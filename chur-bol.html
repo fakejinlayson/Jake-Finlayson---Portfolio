@@ -1,128 +1,74 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Chur Bol | Jake Finlayson - Creative Portfolio</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" href="../assets/images/ico/favicon.png" />
-    <link rel="stylesheet" href="../assets/css/plugins.min.css">
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <!-- Socicon CSS -->
-    <link rel="stylesheet" href="assets/css/vendors/socicon-style.css">
-  </head>
-  <body>
-    <div class="ms-main-container">
-      <!-- Preloader -->
-      <div class="ms-preloader"></div>
-      <!-- Header -->
-      <header class="ms-header navbar-black">
-        <nav class="ms-nav">
-          <div class="ms-logo">
-            <a href="index.html" data-type="page-transition">
-              <div class="logo-dark current"><img src="logo-dark.svg" alt="logo image"></div>
-              <div class="logo-light"><img src="logo-light.svg" alt="logo image"></div>
-            </a>
-          </div>
-          <button class="hamburger" type="button" data-toggle="navigation">
-          <span class="hamburger-box">
-            <span class="hamburger-label">menu</span>
-            <span class="hamburger-inner"></span>
-          </span>
-          </button>
-          <div class="height-full-viewport">
-            <ul class="ms-navbar">
-              <!-- Nav Link -->
-              <li class="nav-item">
-                <a href="index.html" data-type="page-transition">
-                  <span class="ms-btn">home</span>
-                  <span class="nav-item__label">Back to home page</span>
-                </a>
-              </li>
-              <!-- Nav Link -->
-              <li class="nav-item">
-                <a href="about.html" data-type="page-transition">
-                  <span class="ms-btn">about</span>
-                  <span class="nav-item__label">Learn more about me</span>
-                </a>
-              </li>
-              <!-- Nav Link -->
-              <li class="nav-item">
-                <a href="projects.html" data-type="page-transition">
-                  <span class="ms-btn">portfolio</span>
-                  <span class="nav-item__label">View my work</span>
-                </a>
-              </li>
-              <!-- Nav Link -->
-              <li class="nav-item">
-                <a href="contact.html" data-type="page-transition">
-                  <span class="ms-btn">contact</span>
-                  <span class="nav-item__label">Get in touch with me</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </header>
-      <!-- Container -->
-      <main class="ms-container">
-        <!-- Page Title -->
-        <div class="ms-section__block">
-          <div class="ms-page-title">
-            <h2 class="page-header">Chur Bol</h2>
-            <p class="page-desc">
-                Marketing Chur Bol BBQ - The Yard, a restaurant in Nelson specialising in slow-cooked meats and bold flavours. Creating social media graphics and managed their online presence.          </div>
-        </div>
-        <!-- About Section -->
-        <div class="ms-section__block">
-            <div class="justify-center align-center" style="text-align:center;">
-            <img src="../assets/images/projects/img-churbol.jpg" alt="Chur Bol Logo" style="width:80%;margin-bottom:1em;">
-            </div>
-            <h3 class="mb-4">About</h3>
-            <p>
-                At Chur Bol I helped with social media, including scheduling posts, photographing new food items and editing them in Adobe Lightroom. I also helped elevate their page and brand presence at events.edia, including scheduling posts, photographing new food items and editing them in Adobe Lightroom. I also helped elevate their page and brand presence at events.            </p>
-            <div style="display:flex; align-items:center; justify-content:center; gap:1em;">
-                <!-- Left button -->
-                <button id="saniti-prev" class="ms-button" aria-label="Previous image"
-                    style="font-size:1em; padding:0.6em 0.8em;">
-                    &lt;
-                </button>
-                <!-- Image -->
-                <img id="saniti-carousel-img"
-                    src="../assets/images/projects/chur bol/chur-burger.webp"
-                    alt="Chur Bol Screenshot"
-                    class="carousel-img"
-                    data-images='[
-                    "../assets/images/projects/chur bol/chur-burger.webp",
-                    "../assets/images/projects/chur bol/chur-churkish.webp",
-                    "../assets/images/projects/chur bol/chur-tacos.jpg"
-                    ]'
-                    style="display:block; margin-bottom:1em;">
-                <!-- Right button -->
-                <button id="saniti-next" class="ms-button" aria-label="Next image"
-                    style="font-size:1em; padding:0.6em 0.8em;">
-                    &gt;
-                </button>
-            </div>
-        </div>
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chur Bol BBQ — Jake Finlayson</title>
+<meta name="description" content="Social media marketing for Chur Bol BBQ – The Yard, a Nelson restaurant specialising in slow-cooked meats.">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/project-page.css">
+</head>
+<body>
 
-        
-      </main>
-      <!-- Footer -->
-      <footer>
-        <div class="ms-footer">
-          <div class="copyright">Copyright © 2025. Jake Finlayson</div>
-          <ul class="socials">
-            <li><a href="https://github.com/fakejinlayson" class="socicon-github"></a></li>
-            <li><a href="https://www.linkedin.com/in/jake-finlayson" class="socicon-linkedin"></a></li>
-            <li><a href="https://www.upwork.com/freelancers/~01a132dd50adcf6641" class="socicon-upwork"></a></li>
-          </ul>
-        </div>
-      </footer>
+<div id="preloader">
+  <div class="pct" id="pct">0%</div>
+  <div class="bar-track"><div class="bar-fill" id="barFill"></div></div>
+</div>
+
+<nav>
+  <a class="logo" href="index.html">JF</a>
+  <div class="links">
+    <a href="about.html">About</a>
+    <a href="projects.html" class="current">Work</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<main>
+
+  <section class="proj-hero">
+    <a class="proj-hero__back" href="projects.html">
+      <span class="proj-hero__back-arrow">←</span> Back to Work
+    </a>
+    <div class="proj-hero__tags">
+      <span class="proj-hero__tag">Marketing &amp; Design</span>
     </div>
-    <!-- JS Libraries -->
-    <script type="text/javascript" src="../assets/js/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="../assets/js/plugins.min.js"></script>
-    <script type="text/javascript" src="../assets/js/main.js"></script>
-    <script src="../assets/js/image-carousel.js"></script>
-  </body>
+    <div class="proj-hero__title-wrap">
+      <h1 class="proj-hero__title">Chur Bol BBQ</h1>
+      <!-- <div class="proj-icon" style="top: -20px; left: -20px;"><img src="assets/images/icons/icon-churbol.png" alt="Chur Bol BBQ"></div> -->
+    </div>
+    <p class="proj-hero__desc">Marketing for Chur Bol BBQ – The Yard, a restaurant in Nelson specialising in slow-cooked meats and bold flavours. Social media graphics and online presence management.</p>
+  </section>
+
+  <!-- About -->
+  <section class="proj-section">
+    <div class="proj-section__inner">
+      <div class="proj-section__heading">About</div>
+      <div class="proj-section__body">
+        <p>At Chur Bol I helped with social media, including scheduling posts, photographing new food items and editing them in Adobe Lightroom. I also helped elevate their page and brand presence at events.</p>
+      </div>
+      <div class="proj-carousel" style="margin-top:24px;"
+        data-images='["assets/images/projects/chur bol/chur-burger.webp","assets/images/projects/chur bol/chur-churkish.webp","assets/images/projects/chur bol/chur-tacos.jpg"]'>
+        <button class="proj-carousel__btn" data-carousel-prev aria-label="Previous">←</button>
+        <img class="proj-carousel__img" src="assets/images/projects/chur bol/chur-burger.webp" alt="Chur Bol food photography">
+        <button class="proj-carousel__btn" data-carousel-next aria-label="Next">→</button>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" id="contact">
+  <div class="big">Let's make something.</div>
+  <a class="contact-link" href="mailto:info@jakefinlayson.co.nz">info@jakefinlayson.co.nz</a>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Draggable.min.js"></script>
+<script src="js/site-helpers.js"></script>
+<script src="js/project-page.js"></script>
+<script src="js/preloader.js"></script>
+
+</body>
 </html>

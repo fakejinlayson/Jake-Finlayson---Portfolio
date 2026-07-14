@@ -1,0 +1,71 @@
+﻿<!--
+  PAGE TEMPLATE — not a real page, just a reference skeleton.
+  Copy this structure when building any new page on the site so
+  nav, preloader, and script loading stay consistent everywhere.
+
+  This file is meant to live at the SAME folder level as css/ and
+  js/ (i.e. site root, next to index.html, about.html, etc) —
+  flat structure, no subfolders. If you move this file anywhere
+  else, the relative paths below ("css/base.css" etc) will break.
+
+  Replace before using:
+    - <title> and meta description
+    - the <main> content between nav and footer
+    - "PAGE.css" and "PAGE.js" with this page's own filenames
+    - the nav .current class on whichever link matches this page
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page Title — Jake Finlayson</title>
+<meta name="description" content="One-line description for SEO/social sharing.">
+
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/PAGE.css">
+</head>
+<body>
+
+<div id="preloader">
+  <div class="pct" id="pct">0%</div>
+  <div class="bar-track"><div class="bar-fill" id="barFill"></div></div>
+</div>
+
+<nav>
+  <a class="logo" href="index.html">JF</a>
+  <div class="links">
+    <a href="about.html">About</a>
+    <a href="projects.html">Work</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<div class="scroll-hint" id="scrollHint">
+  <span>Scroll</span>
+  <div class="line"></div>
+</div>
+
+<main>
+  <!-- page-specific sections go here -->
+</main>
+
+<footer class="site-footer" id="contact">
+  <div class="big">Let's make something.</div>
+  <a class="contact-link" href="mailto:info@jakefinlayson.co.nz">info@jakefinlayson.co.nz</a>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<!-- only include Draggable.min.js on pages that actually use it -->
+<script src="js/site-helpers.js"></script>
+<script src="js/PAGE.js"></script>
+<script src="js/preloader.js"></script>
+<!--
+  preloader.js loads LAST because it calls window.initPage as soon
+  as it finishes — that function must already be defined by the
+  time preloader.js runs, which PAGE.js is responsible for.
+-->
+
+</body>
+</html>

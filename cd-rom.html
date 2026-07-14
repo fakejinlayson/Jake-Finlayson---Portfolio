@@ -1,155 +1,111 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>cdRom | Jake Finlayson - Creative Portfolio</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" href="../assets/images/ico/favicon.png" />
-    <link rel="stylesheet" href="../assets/css/plugins.min.css">
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <!-- Socicon CSS -->
-    <link rel="stylesheet" href="assets/css/vendors/socicon-style.css">
-  </head>
-  <body>
-    <div class="ms-main-container">
-      <!-- Preloader -->
-      <div class="ms-preloader"></div>
-      <!-- Header -->
-      <header class="ms-header navbar-black">
-        <nav class="ms-nav">
-          <div class="ms-logo">
-            <a href="index.html" data-type="page-transition">
-              <div class="logo-dark current"><img src="logo-dark.svg" alt="logo image"></div>
-              <div class="logo-light"><img src="logo-light.svg" alt="logo image"></div>
-            </a>
-          </div>
-          <button class="hamburger" type="button" data-toggle="navigation">
-          <span class="hamburger-box">
-            <span class="hamburger-label">menu</span>
-            <span class="hamburger-inner"></span>
-          </span>
-          </button>
-          <div class="height-full-viewport">
-            <ul class="ms-navbar">
-              <!-- Nav Link -->
-              <li class="nav-item">
-                <a href="index.html" data-type="page-transition">
-                  <span class="ms-btn">home</span>
-                  <span class="nav-item__label">Back to home page</span>
-                </a>
-              </li>
-              <!-- Nav Link -->
-              <li class="nav-item">
-                <a href="about.html" data-type="page-transition">
-                  <span class="ms-btn">about</span>
-                  <span class="nav-item__label">Learn more about me</span>
-                </a>
-              </li>
-              <!-- Nav Link -->
-              <li class="nav-item">
-                <a href="projects.html" data-type="page-transition">
-                  <span class="ms-btn">portfolio</span>
-                  <span class="nav-item__label">View my work</span>
-                </a>
-              </li>
-              <!-- Nav Link -->
-              <li class="nav-item">
-                <a href="contact.html" data-type="page-transition">
-                  <span class="ms-btn">contact</span>
-                  <span class="nav-item__label">Get in touch with me</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </header>
-      <!-- Container -->
-      <main class="ms-container">
-        <!-- Page Title -->
-        <div class="ms-section__block">
-          <div class="ms-page-title">
-            <h2 class="page-header">cdROM.480p.hd_freeDownload</h2>
-            <p class="page-desc">
-                Play as an e-mail scammer working during the late-'90s. Use the power of deduction, choose the template, and choose the words to create the perfect e-mail based on your victim's personality.            </p>
-          </div>
-        </div>
-        <!-- YouTube Video -->
-        <div class="ms-section__block center-block align-center">
-          <div style="max-width: 800px; margin: 0 auto;">
-            <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden;">
-              <iframe src="https://www.youtube.com/embed/nSwzZSlimaY?si=OCH7WewKu0H5miY1" 
-                frameborder="0" allowfullscreen
-                style="position:absolute;top:0;left:0;width:100%;height:100%;">
-              </iframe>
-            </div>
-          </div>
-        </div>
-        <!-- About Section -->
-        <div class="ms-section__block">
-            <h3 class="mb-4">About the Project</h3>
-            <p>
-                The idea for this game was to create a 'Game for Impact'. Deciding to take a unique spin on the common email scammer trope, we wanted to explore why people actually scam in the first place. By placing the player in the role of a scammer, we could explore the psychology behind it, narratively showcasing the desperation and moral dilemmas that lead people to scam others. To best illustrate this morally-gray concept, inspiration was taken from Papers, Please with a 90's nostalgic computer aesthetic to wrap the experience in. Whilst the game is very unserious and comedic, it was important that the world building and lore I created all linked back to real world issues. 
-            </p>
-            <div style="display:flex; align-items:center; justify-content:center; gap:1em;">
-                <!-- Left button -->
-                <button id="saniti-prev" class="ms-button" aria-label="Previous image"
-                    style="font-size:1em; padding:0.6em 0.8em;">
-                    &lt;
-                </button>
-                <!-- Image -->
-                <img id="saniti-carousel-img"
-                    src="../assets/images/projects/cd rom/cdRom-bio-viewer.jpg"
-                    alt="Ridden Screenshot"
-                    class="carousel-img"
-                    data-images='[
-                    "../assets/images/projects/cd rom/cdRom-bio-viewer.jpg",
-                    "../assets/images/projects/cd rom/cd-rom-choice.jpg",
-                    "../assets/images/projects/cd rom/cdRom-email.jpg"
-                    ]'
-                    style="display:block; margin-bottom:1em;">
-                <!-- Right button -->
-                <button id="saniti-next" class="ms-button" aria-label="Next image"
-                    style="font-size:1em; padding:0.6em 0.8em;">
-                    &gt;
-                </button>
-            </div>
-        </div>
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>cdROM.480p.hd_freeDownload — Jake Finlayson</title>
+<meta name="description" content="Play as an email scammer in the late 90s. A game for impact inspired by Papers, Please.">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/project-page.css">
+</head>
+<body>
 
-        <!-- About Section -->
-        <div class="ms-section__block">
-            <h3 class="mb-4">Key focuses</h3>
-            <p>
-                My key focuses for this project was programming the custom Technical Narrative Design, Research & Narrative Design, the dynamic scoring system, optimization and testing and general Game Design.
-            </p>
-        </div>
-        <!-- Itch.io Section -->
-        <div class="ms-section__block">
-          <h3 class="mb-4">Play it on Itch.io</h3>
-          <div class="center-block align-center">
-            <div style="max-width: 800px; margin: 0 auto;">
-                <iframe frameborder="0" src="https://itch.io/embed/1585166?dark=true"
-                    width="552" height="167">
-                    <a href="https://bigmoneycorporate.itch.io/cdrom480phd-freedownload">cdROM.480p.hd_freeDownload by bigmoneycorporate, danbol, Rjinswand, 3mourn</a>
-                </iframe>
-            </div>
-        </div>
-      </main>
-      <!-- Footer -->
-      <footer>
-        <div class="ms-footer">
-          <div class="copyright">Copyright © 2025. Jake Finlayson</div>
-          <ul class="socials">
-            <li><a href="https://github.com/fakejinlayson" class="socicon-github"></a></li>
-            <li><a href="https://www.linkedin.com/in/jake-finlayson" class="socicon-linkedin"></a></li>
-            <li><a href="https://www.upwork.com/freelancers/~01a132dd50adcf6641" class="socicon-upwork"></a></li>
-          </ul>
-        </div>
-      </footer>
+<div id="preloader">
+  <div class="pct" id="pct">0%</div>
+  <div class="bar-track"><div class="bar-fill" id="barFill"></div></div>
+</div>
+
+<nav>
+  <a class="logo" href="index.html">JF</a>
+  <div class="links">
+    <a href="about.html">About</a>
+    <a href="projects.html" class="current">Work</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<main>
+
+  <section class="proj-hero">
+    <a class="proj-hero__back" href="projects.html">
+      <span class="proj-hero__back-arrow">←</span> Back to Work
+    </a>
+    <div class="proj-hero__tags">
+      <span class="proj-hero__tag">Game Development</span>
     </div>
-    <!-- JS Libraries -->
-    <script type="text/javascript" src="../assets/js/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="../assets/js/plugins.min.js"></script>
-    <script type="text/javascript" src="../assets/js/main.js"></script>
-    <script src="../assets/js/image-carousel.js"></script>
-  </body>
+    <div class="proj-hero__title-wrap">
+      <h1 class="proj-hero__title">cdROM.480p<br>.hd_freeDownload</h1>
+      <!-- <div class="proj-icon" style="bottom: -16px; left: -20px;"><img src="assets/images/icons/icon-cdrom.png" alt="cdROM.480p"></div> -->
+    </div>
+    <p class="proj-hero__desc">Play as an email scammer working during the late '90s. Use the power of deduction — choose the template and the words to craft the perfect email based on your victim's personality.</p>
+  </section>
+
+  <!-- Trailer -->
+  <section class="proj-section">
+    <div class="proj-section__inner">
+      <div class="proj-section__heading">Trailer</div>
+      <div class="proj-embed-wrap">
+        <div class="proj-embed">
+          <iframe src="https://www.youtube.com/embed/nSwzZSlimaY?si=OCH7WewKu0H5miY1"
+            allowfullscreen loading="lazy" title="cdROM trailer"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="proj-section">
+    <div class="proj-section__inner">
+      <div class="proj-section__heading">About the Project</div>
+      <div class="proj-section__body">
+        <p>The idea for this game was to create a 'Game for Impact'. Taking a unique spin on the common email scammer trope, we wanted to explore why people actually scam in the first place. By placing the player in the role of a scammer, we could explore the psychology behind it — narratively showcasing the desperation and moral dilemmas that lead people to scam others.</p>
+        <p>To best illustrate this morally-grey concept, inspiration was taken from Papers, Please, with a '90s nostalgic computer aesthetic wrapping the experience. Whilst the game is comedic, it was important that the world building and lore I created all linked back to real world issues.</p>
+      </div>
+      <div class="proj-carousel proj-carousel--spaced"
+        data-images='["assets/images/projects/cd rom/cdRom-bio-viewer.jpg","assets/images/projects/cd rom/cd-rom-choice.jpg","assets/images/projects/cd rom/cdRom-email.jpg"]'>
+        <button class="proj-carousel__btn" data-carousel-prev aria-label="Previous">←</button>
+        <img class="proj-carousel__img" src="assets/images/projects/cd rom/cdRom-bio-viewer.jpg" alt="cdROM screenshot">
+        <button class="proj-carousel__btn" data-carousel-next aria-label="Next">→</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key focuses -->
+  <section class="proj-section">
+    <div class="proj-section__inner">
+      <div class="proj-section__heading">Key Focuses</div>
+      <div class="proj-section__body">
+        <p>My key focuses for this project were programming the custom Technical Narrative Design system, Research &amp; Narrative Design, the dynamic scoring system, optimisation and testing, and general Game Design.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Play -->
+  <section class="proj-section">
+    <div class="proj-section__inner">
+      <div class="proj-section__heading">Play it on Itch.io</div>
+      <div class="proj-itch">
+        <iframe src="https://itch.io/embed/1585166?dark=true" loading="lazy"
+          title="cdROM on Itch.io">
+          <a href="https://bigmoneycorporate.itch.io/cdrom480phd-freedownload">cdROM.480p.hd_freeDownload by bigmoneycorporate</a>
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" id="contact">
+  <div class="big">Let's make something.</div>
+  <a class="contact-link" href="mailto:info@jakefinlayson.co.nz">info@jakefinlayson.co.nz</a>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Draggable.min.js"></script>
+<script src="js/site-helpers.js"></script>
+<script src="js/project-page.js"></script>
+<script src="js/preloader.js"></script>
+
+</body>
 </html>
