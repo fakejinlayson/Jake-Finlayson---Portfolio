@@ -12,31 +12,33 @@
 // vary intentionally — landscape stills, portrait stills, and
 // square thumbnails coexist, mirroring real asset variety.
 // ============================================================
+// Each window: size (w/h before scaling), label, optional href (the body
+// becomes a link with a "Show more" hover; dragging stays on the titlebar), image.
 const CATEGORIES = {
   'Game Dev': [
-    { w: 320, h: 220, label: 'Chutney', src: 'assets/images/projects/chutney/chutney-gameplay1.webp' },
-    { w: 240, h: 300, label: 'RIDDEN', src: 'assets/images/projects/ridden/ridden-4.webp' },
-    { w: 360, h: 200, label: 'Game Grimoire', src: 'assets/images/projects/game grimoire/game-grimoire-screenshot1.webp' },
-    { w: 260, h: 260, label: 'Makerspace', src: 'assets/images/projects/makerspace/makerspace-game.webp' },
-    { w: 300, h: 225, label: 'Daily Games', src: 'assets/images/projects/img-dailygames.webp' }
+    { w: 320, h: 220, label: 'Chutney', href: 'chutney.html', src: 'assets/images/projects/chutney/chutney-gameplay1.webp' },
+    { w: 240, h: 300, label: 'RIDDEN', href: 'ridden.html', src: 'assets/images/projects/ridden/ridden-4.webp' },
+    { w: 360, h: 200, label: 'Game Grimoire', href: 'game-grimoire.html', src: 'assets/images/projects/game grimoire/game-grimoire-screenshot1.webp' },
+    { w: 260, h: 260, label: 'Makerspace', href: 'makerspace.html', src: 'assets/images/projects/makerspace/makerspace-game.webp' },
+    { w: 300, h: 225, label: 'Daily Games', href: 'daily-games.html', src: 'assets/images/projects/img-dailygames.webp' }
   ],
   'Video': [
-    { w: 360, h: 200, label: 'two dudes', src: 'assets/images/projects/twodudes/twodudes-img-3.webp' },
-    { w: 220, h: 300, label: 'Hato Hone St John', src: 'assets/images/projects/hhstj/hhstj-img-9.webp' },
-    { w: 300, h: 220, label: 'NZ Scrabble', src: 'assets/images/projects/scrabble/scrabble-obs.webp' },
-    { w: 240, h: 240, label: 'SANITI', src: 'assets/images/projects/saniti/saniti-event-1.webp' },
-    { w: 200, h: 340, label: 'The Opportunity Party', src: 'assets/images/projects/opportunity-party/top-farm-poster.webp' }
+    { w: 360, h: 200, label: 'two dudes', href: 'twodudes.html', src: 'assets/images/projects/twodudes/twodudes-img-3.webp' },
+    { w: 220, h: 300, label: 'Hato Hone St John', href: 'hato-hone-st-john.html', src: 'assets/images/projects/hhstj/hhstj-img-9.webp' },
+    { w: 300, h: 220, label: 'NZ Scrabble', href: 'scrabblenz.html', src: 'assets/images/projects/scrabble/scrabble-obs.webp' },
+    { w: 240, h: 240, label: 'SANITI', href: 'saniti.html', src: 'assets/images/projects/saniti/saniti-event-1.webp' },
+    { w: 200, h: 340, label: 'The Opportunity Party', href: 'opportunity-party.html', src: 'assets/images/projects/opportunity-party/top-farm-poster.webp' }
   ],
   'Marketing & Design': [
-    { w: 340, h: 200, label: 'Nelson Community Foodbank', src: 'assets/images/projects/foodbank nelson/logo-redesign.webp' },
-    { w: 280, h: 280, label: 'Chur Bol BBQ', src: 'assets/images/projects/chur bol/chur-burger.webp' },
-    { w: 300, h: 220, label: 'Hato Hone St John', src: 'assets/images/projects/hhstj/hhstj-img-5.webp' },
-    { w: 300, h: 220, label: 'Two Dudes', src: 'assets/images/projects/twodudes/twodudes-img-2.webp' }
+    { w: 340, h: 200, label: 'Nelson Community Foodbank', href: 'foodbank-nelson.html', src: 'assets/images/projects/foodbank nelson/logo-redesign.webp' },
+    { w: 280, h: 280, label: 'Chur Bol BBQ', href: 'chur-bol.html', src: 'assets/images/projects/chur bol/chur-burger.webp' },
+    { w: 300, h: 220, label: 'Hato Hone St John', href: 'hato-hone-st-john.html', src: 'assets/images/projects/hhstj/hhstj-img-5.webp' },
+    { w: 300, h: 220, label: 'Two Dudes', href: 'twodudes.html', src: 'assets/images/projects/twodudes/twodudes-img-2.webp' }
   ],
   'Music': [
-    { w: 260, h: 260, label: 'Chutney OST', src: 'assets/images/projects/chutney/chutney-ost.webp' },
-    { w: 320, h: 190, label: 'tides under all', src: 'assets/images/projects/tides under all/tides-under-all-cover.webp' },
-    { w: 320, h: 280, label: '3mourn', src: 'assets/images/projects/3mourn-img-ss.webp' }
+    { w: 260, h: 260, label: 'Chutney OST', href: 'chutney.html', src: 'assets/images/projects/chutney/chutney-ost.webp' },
+    { w: 320, h: 190, label: 'tides under all', href: 'tides-under-all.html', src: 'assets/images/projects/tides under all/tides-under-all-cover.webp' },
+    { w: 320, h: 280, label: '3mourn', href: 'tides-under-all.html', src: 'assets/images/projects/3mourn-img-ss.webp' }
   ]
 };
 
@@ -126,9 +128,14 @@ function openCategory(categoryName) {
         <span class="win-title">${item.label}</span>
         <button class="win-close" aria-label="Close"></button>
       </div>
-      <div class="win-body">
-        <img src="${item.src}" alt="${item.label}" loading="lazy">
-      </div>
+      ${item.href
+        ? `<a class="win-body" href="${item.href}">
+             <img src="${item.src}" alt="${item.label}" loading="lazy">
+             <span class="win-more"><span>Show more</span></span>
+           </a>`
+        : `<div class="win-body">
+             <img src="${item.src}" alt="${item.label}" loading="lazy">
+           </div>`}
     `;
 
     canvas.appendChild(winEl);

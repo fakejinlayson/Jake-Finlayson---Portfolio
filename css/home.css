@@ -348,6 +348,43 @@
   pointer-events: none;
 }
 
+/* Linked windows: hovering the image fades up "Show more" over a
+   half-opacity black wash; clicking goes to the project page.
+   Only the titlebar drags, so this doesn't interfere with dragging. */
+a.win-body {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.win-more {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.win-more span {
+  display: inline-block;
+  color: var(--fg);
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  transform: translateY(12px);
+  transition: transform 0.35s ease;
+}
+
+a.win-body:hover .win-more,
+a.win-body:focus-visible .win-more { opacity: 1; }
+
+a.win-body:hover .win-more span,
+a.win-body:focus-visible .win-more span { transform: translateY(0); }
+
 /* ---------- HOMEPAGE FOOTER OVERRIDE ---------- */
 /* base.css footer.site-footer is min-height: 60vh with padding.
    The homepage footer is a full-screen closing beat instead. */
