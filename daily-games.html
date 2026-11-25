@@ -36,7 +36,7 @@
     <div class="proj-hero__title-wrap">
       <h1 class="proj-hero__title">Daily<br>Games</h1>
     </div>
-    <p class="proj-hero__desc">The Everything Bagel and Debatle: two daily browser games I designed and built from scratch. One new puzzle a day, the same one for everyone, playable in a couple of minutes on any phone.</p>
+    <p class="proj-hero__desc">The Everything Bagel and Debatle: two daily browser games I designed and built from scratch.</p>
   </section>
 
   <!-- About -->
@@ -44,8 +44,8 @@
     <div class="proj-section__inner">
       <div class="proj-section__heading">About</div>
       <div class="proj-section__body">
-        <p>Daily games live or die on one idea that's quick to learn, different every day and fun to share. I wanted to make a small suite of them with a shared feel: a chunky pixel-art look, a numbered puzzle every day at midnight UTC, an archive of past days and a share card at the end.</p>
-        <p>I handled everything end to end: the game design, the pixel-art interface, the front and back end, the content pipeline that produces each day's puzzle and the tools I use to check it before it goes live. Both games launched in November 2026.</p>
+        <p>Daily games live or die on one idea that's quick to learn, different every day and fun to share. I wanted to make a small suite of them with a shared feel: a chunky pixel-art look, a numbered puzzle every day at midnight.</p>
+        <p>I handled everything end to end: the game design, the pixel-art interface, the front and back end, the content pipeline that produces each day's puzzle and the tools I use to check it before it goes live. Both games launched in 2026.</p>
       </div>
     </div>
   </section>
@@ -57,8 +57,7 @@
       <div class="proj-cols proj-cols--2-3">
         <img loading="lazy" class="proj-img" src="assets/images/projects/daily-games/eb-tutorial2.webp" alt="The Everything Bagel how-to-play, with every segment of an example bagel filled in">
         <div class="proj-section__body">
-          <p>A daily word puzzle shaped like a bagel. Four categories sit around the ring, and each segment needs an answer that fits the two categories either side of it. The centre needs one answer that fits all four.</p>
-          <p>Rarer answers score more, so the fun is digging past the obvious. Every slot also hides a "Hole in One", a rare answer with an interesting fact attached. A pastel, rainbow pixel-art style keeps it light and friendly.</p>
+          <p>A daily word puzzle shaped like a bagel. Four categories sit around the ring, and each segment needs an answer that fits the two categories either side of it. The centre needs one answer that fits all four. Rarer answers score more.</p>
           <div class="proj-cta">
             <a class="btn-outline" href="https://everythingbagel.io/" target="_blank" rel="noopener">Play The Everything Bagel →</a>
           </div>
@@ -74,7 +73,6 @@
       <div class="proj-cols proj-cols--3-2">
         <div class="proj-section__body">
           <p>A daily debate game. Every day there's one ridiculous motion, like whether the middle seat should get both armrests. You pick a side and argue it against an AI opponent over three short rounds: an opening, a rebuttal and a closing.</p>
-          <p>An AI judge scores every speech, and a pixel-art crowd in the debating hall swings toward whoever argued better. You win by ending with more of the room on your side than you started with.</p>
           <div class="proj-cta">
             <a class="btn-outline" href="https://debatle.io/" target="_blank" rel="noopener">Play Debatle →</a>
           </div>
@@ -95,14 +93,19 @@
     </div>
   </section>
 
-  <!-- Under the hood -->
+  <!-- Built with -->
   <section class="proj-section">
     <div class="proj-section__inner">
-      <div class="proj-section__heading">Under the hood</div>
-      <div class="proj-section__body">
-        <p>Both games are built with Next.js and TypeScript, store their data in Supabase and are hosted on Vercel. The server holds the answers: the browser only ever receives the day's categories or motion, so nobody can peek at the solution.</p>
-        <p>For The Everything Bagel I built a content pipeline where several AI models generate answer lists for each bagel, vote on disputed answers and fact-check the Hole in One facts. I then review and adjust every bagel in a custom admin tool before publishing it. Guesses that aren't on the list are checked live, so fair answers still count.</p>
-        <p>Debatle's judge is modelled on how competitive debating is judged at the World Universities Debating Championship. It scores each speech on reasoning, engagement, rhetoric and strategy. It never knows which side is the AI and sees the two speeches in a random order, so it can't play favourites.</p>
+      <div class="proj-section__heading">Built with</div>
+      <div class="proj-logos">
+        <img src="assets/images/icons/stack/nextdotjs.svg" alt="Next.js" title="Next.js">
+        <img src="assets/images/icons/stack/react.svg" alt="React" title="React">
+        <img src="assets/images/icons/stack/typescript.svg" alt="TypeScript" title="TypeScript">
+        <img src="assets/images/icons/stack/tailwindcss.svg" alt="Tailwind CSS" title="Tailwind CSS">
+        <img src="assets/images/icons/stack/supabase.svg" alt="Supabase" title="Supabase">
+        <img src="assets/images/icons/stack/vercel.svg" alt="Vercel" title="Vercel">
+        <img src="assets/images/icons/stack/anthropic.svg" alt="Anthropic Claude" title="Anthropic Claude">
+        <img src="assets/images/icons/stack/stripe.svg" alt="Stripe" title="Stripe">
       </div>
     </div>
   </section>

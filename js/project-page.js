@@ -35,12 +35,47 @@ function initCarousels() {
 }
 
 // ============================================================
+// BIG NUMBERS — fit to their boxes
+// Every number in a row shares one font size: the largest size at
+// which the widest final value fits inside its box with 10% to spare. Re-run
+// on resize. (Measured from the final text, so the count-up
+// animation never changes the size.)
+// ============================================================
+function fitStats() {
+  document.querySelectorAll('.proj-stats').forEach(row => {
+    row.style.removeProperty('--stat-size');
+    const nums = [...row.querySelectorAll('.proj-stat__num')];
+    if (!nums.length) return;
+    const base = parseFloat(getComputedStyle(nums[0]).fontSize);
+    let scale = 1;
+    nums.forEach(num => {
+      const box = num.parentElement;
+      const cs = getComputedStyle(box);
+      const avail = box.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
+      const probe = num.cloneNode(false);
+      probe.textContent = num.dataset.final || num.textContent;
+      probe.style.cssText = 'position:absolute;visibility:hidden;display:inline-block;white-space:nowrap;';
+      box.appendChild(probe);
+      scale = Math.min(scale, (avail * 0.9) / probe.getBoundingClientRect().width); // 10% breathing room
+      probe.remove();
+    });
+    if (scale < 1) row.style.setProperty('--stat-size', Math.floor(base * scale) + 'px');
+  });
+}
+
+// ============================================================
 // BIG NUMBERS — count up from 0 when scrolled into view
 // Only numbers with a data-count attribute animate; the text
 // already in the HTML is the final value, so without JS (or
 // before the scroll) it still reads correctly.
 // ============================================================
 function initCountUps() {
+  document.querySelectorAll('.proj-stat__num').forEach(el => { el.dataset.final = el.textContent; });
+  fitStats();
+  let fitTimer;
+  window.addEventListener('resize', () => { clearTimeout(fitTimer); fitTimer = setTimeout(fitStats, 150); });
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fitStats);
+
   document.querySelectorAll('.proj-stat__num[data-count]').forEach(el => {
     const target = parseFloat(el.dataset.count);
     const decimals = parseInt(el.dataset.decimals || '0', 10);

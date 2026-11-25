@@ -339,6 +339,7 @@
 }
 
 .proj-stat {
+  min-width: 0; /* stop a wide number from stretching its column */
   padding: 32px 28px;
   border-right: 1px solid var(--border-soft);
   border-bottom: 1px solid var(--border-soft);
@@ -346,7 +347,10 @@
 
 .proj-stat__num {
   display: block;
-  font-size: clamp(40px, 5.5vw, 72px);
+  /* --stat-size is set by fitStats() in project-page.js when the
+     widest number in the row wouldn't fit at the default size */
+  font-size: var(--stat-size, clamp(40px, 5.5vw, 72px));
+  white-space: nowrap;
   font-weight: 600;
   letter-spacing: -0.03em;
   line-height: 1;
@@ -393,6 +397,24 @@
   color: var(--fg-muted);
   margin-bottom: 18px;
 }
+
+/* ---------- LOGOS ----------
+   A row of tool/tech logos (white SVGs in assets/images/icons/stack/). */
+.proj-logos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px 56px;
+}
+
+.proj-logos img {
+  height: 44px;
+  width: auto;
+  opacity: 0.85;
+  transition: opacity 0.2s;
+}
+
+.proj-logos img:hover { opacity: 1; }
 
 /* ---------- CAROUSEL ---------- */
 .proj-carousel {
@@ -477,15 +499,20 @@
   }
 
   .proj-stats {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .proj-stat {
     padding: 22px 16px;
   }
 
+  /* An odd last stat spans the full row instead of leaving a gap */
+  .proj-stat:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+  }
+
   .proj-stat__num {
-    font-size: 34px;
+    font-size: var(--stat-size, 34px);
   }
 
   .proj-stat__label {
@@ -495,6 +522,14 @@
 
   .proj-fact__text {
     font-size: 24px;
+  }
+
+  .proj-logos {
+    gap: 28px 36px;
+  }
+
+  .proj-logos img {
+    height: 32px;
   }
 
   .lightbox {

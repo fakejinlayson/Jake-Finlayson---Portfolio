@@ -6,11 +6,11 @@
 
 const PROJECTS = [
   {
-    id: 'daily-games',
-    title: 'Daily Games',
-    href: 'daily-games.html',
-    image: 'assets/images/projects/img-dailygames.webp',
-    categories: ['game-dev']
+    id: 'twodudes',
+    title: 'two dudes',
+    href: 'twodudes.html',
+    image: 'assets/images/projects/img-twodudes.webp',
+    categories: ['marketing', 'video']
   },
   {
     id: 'chutney',
@@ -20,6 +20,13 @@ const PROJECTS = [
     categories: ['game-dev', 'music']
   },
   {
+    id: 'hato-hone-st-john',
+    title: 'Hato Hone St John',
+    href: 'hato-hone-st-john.html',
+    image: 'assets/images/projects/img-hato-hone-st-john.webp',
+    categories: ['marketing', 'video']
+  },
+  {
     id: 'opportunity-party',
     title: 'The Opportunity Party',
     href: 'opportunity-party.html',
@@ -27,18 +34,18 @@ const PROJECTS = [
     categories: ['video', 'marketing']
   },
   {
-    id: 'twodudes',
-    title: 'two dudes',
-    href: 'twodudes.html',
-    image: 'assets/images/projects/img-twodudes.webp',
-    categories: ['marketing', 'video']
+    id: 'daily-games',
+    title: 'Daily Games',
+    href: 'daily-games.html',
+    image: 'assets/images/projects/img-dailygames.webp',
+    categories: ['game-dev']
   },
   {
-    id: 'hato-hone-st-john',
-    title: 'Hato Hone St John',
-    href: 'hato-hone-st-john.html',
-    image: 'assets/images/projects/img-hato-hone-st-john.webp',
-    categories: ['marketing', 'video']
+    id: 'tides-under-all',
+    title: 'tides under all',
+    href: 'tides-under-all.html',
+    image: 'assets/images/projects/img-tidesunderall.webp',
+    categories: ['music']
   },
   {
     id: 'scrabblenz',
@@ -48,13 +55,6 @@ const PROJECTS = [
     categories: ['video']
   },
   {
-    id: 'ridden',
-    title: 'RIDDEN',
-    href: 'ridden.html',
-    image: 'assets/images/projects/img-ridden.webp',
-    categories: ['game-dev', 'music']
-  },
-  {
     id: 'game-grimoire',
     title: 'Game Grimoire YT',
     href: 'game-grimoire.html',
@@ -62,11 +62,11 @@ const PROJECTS = [
     categories: ['game-dev', 'video']
   },
   {
-    id: 'tides-under-all',
-    title: 'tides under all',
-    href: 'tides-under-all.html',
-    image: 'assets/images/projects/img-tidesunderall.webp',
-    categories: ['music']
+    id: 'ridden',
+    title: 'RIDDEN',
+    href: 'ridden.html',
+    image: 'assets/images/projects/img-ridden.webp',
+    categories: ['game-dev', 'music']
   },
   {
     id: 'saniti',

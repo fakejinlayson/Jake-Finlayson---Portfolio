@@ -89,9 +89,11 @@ embeds: `proj-embed-wrap > proj-embed` (YouTube), `proj-steam`, `proj-itch`,
 `proj-spotify` · `proj-cta` · `proj-videos--4` (four reels per row) · `proj-phones` (tall mobile screenshots side by
 side) · `proj-stats` > `proj-stat` > `proj-stat__num` + `proj-stat__label`
 ("big numbers"; `data-count`, optional `data-decimals`/`data-prefix`/`data-suffix`,
-counts up on scroll; the HTML text is the final value) + optional `proj-stats-note` ·
+counts up on scroll; the HTML text is the final value; `fitStats()` shrinks a row so
+its widest number fits) + optional `proj-stats-note` ·
 `proj-section proj-fact` > `proj-fact__text` (one big statement above About; optional
-`proj-fact__mark` eyebrow, `<span>` for the muted half).
+`proj-fact__mark` eyebrow, `<span>` for the muted half) · `proj-logos` (row of white
+simple-icons SVGs from `assets/images/icons/stack/`).
 Gallery/hero/`proj-img`/`proj-phones` images open in a lightbox.
 
 ### Adding a project
