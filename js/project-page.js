@@ -35,6 +35,38 @@ function initCarousels() {
 }
 
 // ============================================================
+// BIG NUMBERS — count up from 0 when scrolled into view
+// Only numbers with a data-count attribute animate; the text
+// already in the HTML is the final value, so without JS (or
+// before the scroll) it still reads correctly.
+// ============================================================
+function initCountUps() {
+  document.querySelectorAll('.proj-stat__num[data-count]').forEach(el => {
+    const target = parseFloat(el.dataset.count);
+    const decimals = parseInt(el.dataset.decimals || '0', 10);
+    const prefix = el.dataset.prefix || '';
+    const suffix = el.dataset.suffix || '';
+    const counter = { value: 0 };
+
+    const render = () => {
+      el.textContent = prefix + counter.value.toLocaleString('en-NZ', {
+        minimumFractionDigits: decimals,
+        maximumFractionDigits: decimals
+      }) + suffix;
+    };
+
+    ScrollTrigger.create({
+      trigger: el,
+      start: 'top 88%',
+      once: true,
+      onEnter: () => {
+        gsap.to(counter, { value: target, duration: 1.6, ease: 'power2.out', onUpdate: render });
+      }
+    });
+  });
+}
+
+// ============================================================
 // DRAGGABLE HERO ICONS — disabled, keeping in case they come back
 // ============================================================
 /*
@@ -62,7 +94,7 @@ function initPageIcons() {
 // LIGHTBOX
 // ============================================================
 function initLightbox() {
-  const triggers = document.querySelectorAll('.proj-gallery img, .proj-hero-img img, .proj-img');
+  const triggers = document.querySelectorAll('.proj-gallery img, .proj-hero-img img, .proj-img, .proj-phones img');
   if (!triggers.length) return;
 
   const lightbox = document.createElement('div');
@@ -137,7 +169,9 @@ window.initPage = function () {
     '.proj-spotify',
     '.proj-itch',
     '.proj-steam',
-    '.proj-videos .proj-video-item'
+    '.proj-videos .proj-video-item',
+    '.proj-phones img',
+    '.proj-stat'
   ].join(', ');
 
   document.querySelectorAll(mediaSelectors).forEach(el => {
@@ -156,6 +190,7 @@ window.initPage = function () {
 
   initCarousels();
   initLightbox();
+  initCountUps();
   // initPageIcons(); // floating hero icons disabled
 
   requestAnimationFrame(() => { ScrollTrigger.refresh(); });

@@ -252,6 +252,9 @@
   cursor: zoom-in;
 }
 
+/* a .btn-outline link sitting directly after another one */
+.proj-cta .btn-outline + .btn-outline { margin-left: 10px; }
+
 /* ---------- VERTICAL VIDEO GRID ---------- */
 .proj-videos {
   display: grid;
@@ -276,6 +279,14 @@
   aspect-ratio: auto;
 }
 
+/* four reels in one row instead of three (drops to 2 then 1 on
+   narrower screens) */
+.proj-videos--4 { grid-template-columns: repeat(4, 1fr); }
+
+@media (max-width: 1000px) {
+  .proj-videos--4 { grid-template-columns: repeat(2, 1fr); }
+}
+
 .proj-video-item video {
   width: 100%;
   height: 100%;
@@ -293,6 +304,95 @@
 .proj-video-item video:fullscreen { object-fit: contain; }
 .proj-video-item video:-webkit-full-screen { object-fit: contain; }
 .proj-video-item video:-moz-full-screen { object-fit: contain; }
+
+/* ---------- PHONE SCREENSHOTS ---------- */
+/* tall mobile screenshots shown side by side, phone-shaped */
+.proj-phones {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 280px));
+  justify-content: center;
+  gap: 24px;
+}
+
+.proj-phones img {
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 18px;
+  border: 1px solid var(--border-soft);
+  display: block;
+  cursor: zoom-in;
+}
+
+/* ---------- BIG NUMBERS ---------- */
+/* a row of headline stats: big figure on top, small label under it.
+   Use data-count on .proj-stat__num to count up when scrolled into
+   view, e.g. <span class="proj-stat__num" data-count="144298">144,298</span>
+   (the text inside is what shows without JS). data-decimals,
+   data-prefix and data-suffix are optional. */
+.proj-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  border-top: 1px solid var(--border-soft);
+  border-left: 1px solid var(--border-soft);
+}
+
+.proj-stat {
+  padding: 32px 28px;
+  border-right: 1px solid var(--border-soft);
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.proj-stat__num {
+  display: block;
+  font-size: clamp(40px, 5.5vw, 72px);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  margin-bottom: 14px;
+  font-variant-numeric: tabular-nums;
+}
+
+.proj-stat__label {
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--fg-muted);
+  line-height: 1.6;
+}
+
+.proj-stats-note {
+  margin-top: 14px;
+  font-size: 12px;
+  color: var(--fg-faint);
+}
+
+/* ---------- KEY FACT ----------
+   One big statement above a page's About (an award, a result, a hook).
+   Not always a number. Wrap the less important half in <span> to mute it:
+   <section class="proj-section proj-fact"><div class="proj-section__inner">
+     <p class="proj-fact__text">Published on Steam <span>as my final-year project.</span></p>
+   </div></section> */
+.proj-fact__text {
+  font-size: clamp(26px, 3.6vw, 46px);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  max-width: 920px;
+}
+
+.proj-fact__text span { color: var(--fg-muted); }
+
+.proj-fact__mark {
+  display: block;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--fg-muted);
+  margin-bottom: 18px;
+}
 
 /* ---------- CAROUSEL ---------- */
 .proj-carousel {
@@ -374,6 +474,27 @@
 
   .proj-carousel {
     flex-direction: column;
+  }
+
+  .proj-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .proj-stat {
+    padding: 22px 16px;
+  }
+
+  .proj-stat__num {
+    font-size: 34px;
+  }
+
+  .proj-stat__label {
+    font-size: 10px;
+    letter-spacing: 0.12em;
+  }
+
+  .proj-fact__text {
+    font-size: 24px;
   }
 
   .lightbox {

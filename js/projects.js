@@ -6,11 +6,25 @@
 
 const PROJECTS = [
   {
+    id: 'daily-games',
+    title: 'Daily Games',
+    href: 'daily-games.html',
+    image: 'assets/images/projects/img-dailygames.webp',
+    categories: ['game-dev']
+  },
+  {
     id: 'chutney',
     title: 'Chutney: Space Survivor',
     href: 'chutney.html',
     image: 'assets/images/projects/img-chutney.webp',
     categories: ['game-dev', 'music']
+  },
+  {
+    id: 'opportunity-party',
+    title: 'The Opportunity Party',
+    href: 'opportunity-party.html',
+    image: 'assets/images/projects/img-opportunity.webp',
+    categories: ['video', 'marketing']
   },
   {
     id: 'twodudes',

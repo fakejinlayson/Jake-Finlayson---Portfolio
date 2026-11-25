@@ -17,13 +17,15 @@ const CATEGORIES = {
     { w: 320, h: 220, label: 'Chutney', src: 'assets/images/projects/chutney/chutney-gameplay1.webp' },
     { w: 240, h: 300, label: 'RIDDEN', src: 'assets/images/projects/ridden/ridden-4.webp' },
     { w: 360, h: 200, label: 'Game Grimoire', src: 'assets/images/projects/game grimoire/game-grimoire-screenshot1.webp' },
-    { w: 260, h: 260, label: 'Makerspace', src: 'assets/images/projects/makerspace/makerspace-game.webp' }
+    { w: 260, h: 260, label: 'Makerspace', src: 'assets/images/projects/makerspace/makerspace-game.webp' },
+    { w: 300, h: 225, label: 'Daily Games', src: 'assets/images/projects/img-dailygames.webp' }
   ],
   'Video': [
     { w: 360, h: 200, label: 'two dudes', src: 'assets/images/projects/twodudes/twodudes-img-3.webp' },
     { w: 220, h: 300, label: 'Hato Hone St John', src: 'assets/images/projects/hhstj/hhstj-img-9.webp' },
     { w: 300, h: 220, label: 'NZ Scrabble', src: 'assets/images/projects/scrabble/scrabble-obs.webp' },
-    { w: 240, h: 240, label: 'SANITI', src: 'assets/images/projects/saniti/saniti-event-1.webp' }
+    { w: 240, h: 240, label: 'SANITI', src: 'assets/images/projects/saniti/saniti-event-1.webp' },
+    { w: 200, h: 340, label: 'The Opportunity Party', src: 'assets/images/projects/opportunity-party/top-farm-poster.webp' }
   ],
   'Marketing & Design': [
     { w: 340, h: 200, label: 'Nelson Community Foodbank', src: 'assets/images/projects/foodbank nelson/logo-redesign.webp' },

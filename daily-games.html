@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Games — Jake Finlayson</title>
+<meta name="description" content="The Everything Bagel and Debatle: two daily browser games I designed and built, with a new puzzle every day.">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/project-page.css">
+</head>
+<body>
+
+<div id="preloader">
+  <div class="pct" id="pct">0%</div>
+  <div class="bar-track"><div class="bar-fill" id="barFill"></div></div>
+</div>
+
+<nav>
+  <a class="logo" href="index.html">JF</a>
+  <div class="links">
+    <a href="about.html">About</a>
+    <a href="projects.html" class="current">Work</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<main>
+
+  <section class="proj-hero">
+    <a class="proj-hero__back" href="projects.html">
+      <span class="proj-hero__back-arrow">←</span> Back to Work
+    </a>
+    <div class="proj-hero__tags">
+      <span class="proj-hero__tag">Game Development</span>
+    </div>
+    <div class="proj-hero__title-wrap">
+      <h1 class="proj-hero__title">Daily<br>Games</h1>
+    </div>
+    <p class="proj-hero__desc">The Everything Bagel and Debatle: two daily browser games I designed and built from scratch. One new puzzle a day, the same one for everyone, playable in a couple of minutes on any phone.</p>
+  </section>
+
+  <!-- About -->
+  <section class="proj-section">
+    <div class="proj-section__inner">
+      <div class="proj-section__heading">About</div>
+      <div class="proj-section__body">
+        <p>Daily games live or die on one idea that's quick to learn, different every day and fun to share. I wanted to make a small suite of them with a shared feel: a chunky pixel-art look, a numbered puzzle every day at midnight UTC, an archive of past days and a share card at the end.</p>
+        <p>I handled everything end to end: the game design, the pixel-art interface, the front and back end, the content pipeline that produces each day's puzzle and the tools I use to check it before it goes live. Both games launched in November 2026.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Everything Bagel -->
+  <section class="proj-section">
+    <div class="proj-section__inner">
+      <div class="proj-section__heading">The Everything Bagel</div>
+      <div class="proj-cols proj-cols--2-3">
+        <img loading="lazy" class="proj-img" src="assets/images/projects/daily-games/eb-tutorial2.webp" alt="The Everything Bagel how-to-play, with every segment of an example bagel filled in">
+        <div class="proj-section__body">
+          <p>A daily word puzzle shaped like a bagel. Four categories sit around the ring, and each segment needs an answer that fits the two categories either side of it. The centre needs one answer that fits all four.</p>
+          <p>Rarer answers score more, so the fun is digging past the obvious. Every slot also hides a "Hole in One", a rare answer with an interesting fact attached. A pastel, rainbow pixel-art style keeps it light and friendly.</p>
+          <div class="proj-cta">
+            <a class="btn-outline" href="https://everythingbagel.io/" target="_blank" rel="noopener">Play The Everything Bagel →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Debatle -->
+  <section class="proj-section">
+    <div class="proj-section__inner">
+      <div class="proj-section__heading">Debatle</div>
+      <div class="proj-cols proj-cols--3-2">
+        <div class="proj-section__body">
+          <p>A daily debate game. Every day there's one ridiculous motion, like whether the middle seat should get both armrests. You pick a side and argue it against an AI opponent over three short rounds: an opening, a rebuttal and a closing.</p>
+          <p>An AI judge scores every speech, and a pixel-art crowd in the debating hall swings toward whoever argued better. You win by ending with more of the room on your side than you started with.</p>
+          <div class="proj-cta">
+            <a class="btn-outline" href="https://debatle.io/" target="_blank" rel="noopener">Play Debatle →</a>
+          </div>
+        </div>
+        <img loading="lazy" class="proj-img" src="assets/images/projects/daily-games/debatle-home.webp" alt="Debatle's daily motion above a pixel-art debating hall split 50/50">
+      </div>
+    </div>
+  </section>
+
+  <!-- Mobile -->
+  <section class="proj-section">
+    <div class="proj-section__inner">
+      <div class="proj-section__heading">Made for phones</div>
+      <div class="proj-phones">
+        <img loading="lazy" src="assets/images/projects/daily-games/eb-home-mobile.webp" alt="The Everything Bagel on a phone">
+        <img loading="lazy" src="assets/images/projects/daily-games/debatle-home-mobile.webp" alt="Debatle on a phone">
+      </div>
+    </div>
+  </section>
+
+  <!-- Under the hood -->
+  <section class="proj-section">
+    <div class="proj-section__inner">
+      <div class="proj-section__heading">Under the hood</div>
+      <div class="proj-section__body">
+        <p>Both games are built with Next.js and TypeScript, store their data in Supabase and are hosted on Vercel. The server holds the answers: the browser only ever receives the day's categories or motion, so nobody can peek at the solution.</p>
+        <p>For The Everything Bagel I built a content pipeline where several AI models generate answer lists for each bagel, vote on disputed answers and fact-check the Hole in One facts. I then review and adjust every bagel in a custom admin tool before publishing it. Guesses that aren't on the list are checked live, so fair answers still count.</p>
+        <p>Debatle's judge is modelled on how competitive debating is judged at the World Universities Debating Championship. It scores each speech on reasoning, engagement, rhetoric and strategy. It never knows which side is the AI and sees the two speeches in a random order, so it can't play favourites.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="proj-section">
+    <div class="proj-section__inner">
+      <div class="proj-section__heading">Gallery</div>
+      <div class="proj-gallery">
+        <img loading="lazy" src="assets/images/projects/daily-games/eb-home.webp" alt="The Everything Bagel: today's bagel">
+        <img loading="lazy" src="assets/images/projects/daily-games/eb-tutorial.webp" alt="The Everything Bagel: how to play">
+        <img loading="lazy" src="assets/images/projects/daily-games/eb-archive.webp" alt="The Everything Bagel: archive">
+        <img loading="lazy" src="assets/images/projects/daily-games/debatle-home.webp" alt="Debatle: today's motion">
+        <img loading="lazy" src="assets/images/projects/daily-games/debatle-howto.webp" alt="Debatle: how to play">
+        <img loading="lazy" src="assets/images/projects/daily-games/debatle-archive.webp" alt="Debatle: archive calendar">
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" id="contact">
+  <div class="big">Let's make something.</div>
+  <a class="contact-link" href="mailto:info@jakefinlayson.co.nz">info@jakefinlayson.co.nz</a>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/site-helpers.js"></script>
+<script src="js/project-page.js"></script>
+<script src="js/preloader.js"></script>
+
+</body>
+</html>
