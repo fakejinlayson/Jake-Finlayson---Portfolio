@@ -88,20 +88,6 @@ const PROJECTS = [
     href: 'cd-rom.html',
     image: 'assets/images/projects/img-cdrom.webp',
     categories: ['game-dev']
-  },
-  {
-    id: 'chur-bol',
-    title: 'Chur Bol BBQ',
-    href: 'chur-bol.html',
-    image: 'assets/images/projects/img-churbol.webp',
-    categories: ['marketing']
-  },
-  {
-    id: 'makerspace',
-    title: 'Makerspace',
-    href: 'makerspace.html',
-    image: 'assets/images/projects/img-makerspace.webp',
-    categories: ['game-dev', 'marketing']
   }
 ];
 

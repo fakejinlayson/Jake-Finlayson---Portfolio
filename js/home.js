@@ -19,7 +19,6 @@ const CATEGORIES = {
     { w: 320, h: 220, label: 'Chutney', href: 'chutney.html', src: 'assets/images/projects/chutney/chutney-gameplay1.webp' },
     { w: 240, h: 300, label: 'RIDDEN', href: 'ridden.html', src: 'assets/images/projects/ridden/ridden-4.webp' },
     { w: 360, h: 200, label: 'Game Grimoire', href: 'game-grimoire.html', src: 'assets/images/projects/game grimoire/game-grimoire-screenshot1.webp' },
-    { w: 260, h: 260, label: 'Makerspace', href: 'makerspace.html', src: 'assets/images/projects/makerspace/makerspace-game.webp' },
     { w: 300, h: 225, label: 'Daily Games', href: 'daily-games.html', src: 'assets/images/projects/img-dailygames.webp' }
   ],
   'Video': [
@@ -31,7 +30,6 @@ const CATEGORIES = {
   ],
   'Marketing & Design': [
     { w: 340, h: 200, label: 'Nelson Community Foodbank', href: 'foodbank-nelson.html', src: 'assets/images/projects/foodbank nelson/logo-redesign.webp' },
-    { w: 280, h: 280, label: 'Chur Bol BBQ', href: 'chur-bol.html', src: 'assets/images/projects/chur bol/chur-burger.webp' },
     { w: 300, h: 220, label: 'Hato Hone St John', href: 'hato-hone-st-john.html', src: 'assets/images/projects/hhstj/hhstj-img-5.webp' },
     { w: 300, h: 220, label: 'Two Dudes', href: 'twodudes.html', src: 'assets/images/projects/twodudes/twodudes-img-2.webp' }
   ],

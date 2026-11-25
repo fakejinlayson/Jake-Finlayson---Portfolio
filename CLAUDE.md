@@ -74,7 +74,7 @@ means editing every `.html` file.
 - **contact.html**: phone, email, GitHub/LinkedIn (Upwork commented out), CTA.
 - **Project pages** (`daily-games`, `chutney`, `twodudes`, `hato-hone-st-john`,
   `scrabblenz`, `ridden`, `game-grimoire`, `tides-under-all`, `saniti`,
-  `foodbank-nelson`, `cd-rom`, `chur-bol`, `makerspace`, `opportunity-party`)
+  `foodbank-nelson`, `cd-rom`, `opportunity-party`)
   share `project-page.css`/`.js`. The Opportunity Party stats are preliminary
   2026 election results; update them once final results are out (27 Nov 2026).
 
@@ -142,7 +142,7 @@ Gallery/hero/`proj-img`/`proj-phones` images open in a lightbox.
 - Explore canvas (540px) + heading is taller than short laptop viewports while pinned.
 - Typo in `index.html`: `disablepictureinpicture0`.
 - Commented-out `proj-icon` lines point to missing `assets/images/icons/icon-*.png`.
-- Image folder names contain spaces (`cd rom`, `chur bol`, `foodbank nelson`,
+- Image folder names contain spaces (`cd rom`, `foodbank nelson`,
   `game grimoire`, `tides under all`).
 - Missing favicon, robots.txt, sitemap, Open Graph/social preview tags.
 
