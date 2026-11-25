@@ -29,9 +29,9 @@ const CATEGORIES = {
     { w: 200, h: 340, label: 'The Opportunity Party', href: 'opportunity-party.html', src: 'assets/images/projects/opportunity-party/top-farm-poster.webp' }
   ],
   'Marketing & Design': [
-    { w: 340, h: 200, label: 'Nelson Community Foodbank', href: 'foodbank-nelson.html', src: 'assets/images/projects/foodbank nelson/logo-redesign.webp' },
-    { w: 300, h: 220, label: 'Hato Hone St John', href: 'hato-hone-st-john.html', src: 'assets/images/projects/hhstj/hhstj-img-5.webp' },
-    { w: 300, h: 220, label: 'Two Dudes', href: 'twodudes.html', src: 'assets/images/projects/twodudes/twodudes-img-2.webp' }
+    { w: 340, h: 220, label: 'Hato Hone St John', href: 'hato-hone-st-john.html', src: 'assets/images/projects/hhstj/hhstj-img-5.webp' },
+    { w: 210, h: 340, label: 'The Opportunity Party', href: 'opportunity-party.html', src: 'assets/images/projects/opportunity-party/top-hobsonville-poster.webp' },
+    { w: 320, h: 220, label: 'Two Dudes', href: 'twodudes.html', src: 'assets/images/projects/twodudes/twodudes-img-2.webp' }
   ],
   'Music': [
     { w: 260, h: 260, label: 'Chutney OST', href: 'chutney.html', src: 'assets/images/projects/chutney/chutney-ost.webp' },
